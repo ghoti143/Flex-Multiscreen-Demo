@@ -1,0 +1,68 @@
+package mil.anc.map.model
+{
+	[Bindable]
+	public class MapModel
+	{
+		public var currentParcel:Extent;
+		public var extent:Extent;
+		public var layers:ArrayCollection;
+		public var printLayers:ArrayCollection;
+		public var lods:Array;
+		public var basemaps:ArrayCollection;
+		public var intermentLayer:GraphicsLayer;
+		public var infoSymbolLayer:GraphicsLayer;
+		public var browsemapLayer:GraphicsLayer;
+		public var genericLayer:GraphicsLayer;
+		public var routeLayer:GraphicsLayer;
+		public var printRouteLayer:GraphicsLayer;
+		public var map:Map;
+				
+		public function MapModel()
+		{
+			extent = new Extent();
+			initialExtent = new Extent();
+			layers = new ArrayCollection();
+			printLayers = new ArrayCollection();
+			basemaps = new ArrayCollection();
+			intermentLayer = new GraphicsLayer();
+			infoSymbolLayer = new GraphicsLayer();
+			browsemapLayer = new GraphicsLayer();
+			genericLayer = new GraphicsLayer();
+			routeLayer = new GraphicsLayer();
+			printRouteLayer = new GraphicsLayer();
+			map = null;
+		}
+		
+		public function findIntermentGraphicByIssID(issID:String):Graphic
+		{
+			var ret:Graphic = new Graphic();
+			
+			for each(var graphic:Graphic in intermentLayer.graphicProvider)
+			{
+				if(graphic.attributes.issID == issID)
+				{
+					ret = graphic;
+					break;
+				}					
+			}
+			
+			return ret;
+		}
+		
+		public function findBrowsemapGraphicByObjectID(objectID:int):Graphic
+		{
+			var ret:Graphic = new Graphic();
+			
+			for each(var graphic:Graphic in browsemapLayer.graphicProvider)
+			{
+				if(graphic.attributes.objectID == objectID)
+				{
+					ret = graphic;
+					break;
+				}					
+			}
+			
+			return ret;
+		}
+	}
+}

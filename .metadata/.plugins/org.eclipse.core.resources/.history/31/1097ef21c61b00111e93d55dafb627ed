@@ -1,0 +1,54 @@
+package mil.anc.map.event
+{
+	import com.esri.ags.FeatureSet;
+	import com.esri.ags.Map;
+	import com.esri.ags.layers.Layer;
+	
+	import flash.events.Event;
+	
+	import mil.anc.map.domain.Browsemap;
+	import mil.anc.map.domain.BrowsemapRecord;
+	import mil.anc.map.domain.BurialRecord;
+	import mil.anc.map.domain.LayerData;
+	
+	import mx.collections.ArrayCollection;
+	
+	public class MappingEvent extends Event
+	{
+		public static const CHANGE_BASEMAP:String = "changeBasemap";
+		public static const CLEAR_ALL_OVERLAYS:String = "changeAllOverlays";
+		public static const ADD_INTERMENT_GRAPHICS:String = "addIntermentGraphics";
+		public static const CLEAR_INTERMENT_LAYER:String = "clearIntermentLayer";
+		public static const ADD_BROWSEMAP_GRAPHICS:String = "addBrowsemapGraphics";
+		public static const CLEAR_BROWSEMAP_LAYER:String = "clearBrowsemapLayer";
+		public static const ADD_GENERIC_GRAPHICS:String = "addGenericGraphics";
+		public static const CLEAR_GENERIC_LAYER:String = "clearGenericLayer";
+		public static const BURIAL_RECORD_SELECTED:String = "burialRecordSelected";
+		public static const MULT_BURIAL_RECORD_SELECTED:String = "multBurialRecordSelected";
+		public static const BROWSEMAP_RECORD_SELECTED:String = "browsemapRecordSelected";
+		public static const REGISTER_MAP_OBJECT:String = "registerMapObject";
+		public static const HIDE_INFO_WINDOW:String = "hideInfoWindow";
+		public static const RESET_MAP:String = "resetMap";
+		
+		public var layerData:LayerData;
+		public var graphics:ArrayCollection;
+		public var burialRecord:BurialRecord;
+		public var browsemapRecord:BrowsemapRecord;
+		public var map:Map;
+		public var zoomToGraphicsExtent:Boolean;
+		public var resetExtent:Boolean;		
+		
+		public function MappingEvent(type:String, layerData:LayerData=null, graphics:ArrayCollection=null, burialRecord:BurialRecord=null, browsemapRecord:BrowsemapRecord=null, map:Map=null, zoomToGraphicsExtent:Boolean=true, resetExtent:Boolean=false)
+		{
+			super(type, true);
+			
+			this.layerData = layerData;
+			this.graphics = graphics;
+			this.burialRecord = burialRecord;
+			this.browsemapRecord = browsemapRecord;
+			this.map = map;
+			this.zoomToGraphicsExtent = zoomToGraphicsExtent;
+			this.resetExtent = resetExtent;
+		}		
+	}
+}

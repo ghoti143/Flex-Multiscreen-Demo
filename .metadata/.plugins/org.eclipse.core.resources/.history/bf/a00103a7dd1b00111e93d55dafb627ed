@@ -1,0 +1,53 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	import com.esri.ags.Graphic;
+	import com.gisinc.showcase.multiscreen.event.MappingEvent;
+	import com.gisinc.showcase.multiscreen.model.ApplicationModel;
+	
+	import flash.events.IEventDispatcher;
+	import flash.events.MouseEvent;
+	
+	import mx.utils.object_proxy;
+
+	public class ParcelInfoSymbolPM
+	{
+		public static const HIDDEN_STATE:String = "hidden";
+		public static const VISIBLE_STATE:String = "visible";
+		
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		[Bindable]
+		public var currentState:String;
+		
+		[Bindable][Inject("applicationModel.screenType")]
+		public var screenType:Boolean;
+		
+		[Bindable][Inject("mapModel.currentParcel")]
+		public var currentParcel:Graphic;
+		
+		[Bindable][Embed(source='assets/images/close_button.png')]
+		public var close_button:Class;
+		
+		function ParcelInfoSymbolPM()
+		{
+		}
+		
+		[PostConstruct]
+		public function init():void
+		{
+			currentState = HIDDEN_STATE;
+		}
+		
+		public function handleCloseButtonClick(event:MouseEvent):void
+		{
+			currentState = HIDDEN_STATE;	
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="parcel")]
+		public function handleShowDetails(parcel:Graphic):void
+		{
+			navigator.pushView(ParcelDetailsView, parcel.attributes);
+		}
+	}
+}

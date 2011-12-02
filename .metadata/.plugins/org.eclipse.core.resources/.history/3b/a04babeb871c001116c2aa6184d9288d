@@ -1,0 +1,30 @@
+package com.gisinc.showcase.multiscreen.desktop.pm
+{
+	import com.gisinc.showcase.multiscreen.model.MapModel;
+	
+	import spark.components.WindowedApplication;
+
+	public class DesktopApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+
+		[Inject]
+		public var mapModel:MapModel;
+		
+		public function DesktopApplicationPM()
+		{			
+		}
+		
+		public function handleApplicationComplete(event:FlexEvent):void
+		{
+			var app:WindowedApplication = event.currentTarget as WindowedApplication;
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="parcel")]
+		public function handleShowDetails(parcel:Graphic):void
+		{
+			navigator.pushView(ParcelDetailsView, parcel.attributes);
+		}
+	}	
+}

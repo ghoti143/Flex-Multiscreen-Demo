@@ -1,0 +1,39 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	import com.gisinc.showcase.multiscreen.model.ApplicationModel;
+	
+	import flash.events.IEventDispatcher;
+	import flash.events.MouseEvent;
+	
+	import mx.utils.object_proxy;
+
+	public class ParcelInfoSymbolPM
+	{
+		public static const WEB_STATE:String = "web";
+		public static const KIOSK_STATE:String = "kiosk";
+		
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		[Bindable]
+		public var currentState:String;
+		
+		[Bindable][Inject("applicationModel.screenType")]
+		public var screenType:Boolean;
+		
+		function ParcelInfoSymbolPM()
+		{
+		}
+		
+		[PostConstruct]
+		public function init():void
+		{
+			currentState = screenType == ApplicationModel.KIOSK_SCREEN_TYPE ? KIOSK_STATE : WEB_STATE;
+		}
+		
+		public function handleCloseButtonClick(event:MouseEvent):void
+		{
+			dispatcher.dispatchEvent(new MappingEvent(MappingEvent.HIDE_INFO_WINDOW));	
+		}
+	}
+}

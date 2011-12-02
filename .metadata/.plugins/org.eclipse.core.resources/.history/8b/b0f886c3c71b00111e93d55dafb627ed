@@ -1,0 +1,12 @@
+package com.gisinc.showcase.multiscreen.domain
+{
+	[Bindable]
+	public class Parcel
+	{		
+		public var id:String;
+		public var label:String;
+		public var url:String;
+		public var icon:Class;
+		public var iconName:String;
+	}
+}

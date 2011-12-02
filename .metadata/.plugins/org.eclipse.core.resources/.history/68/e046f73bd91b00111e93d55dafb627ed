@@ -1,0 +1,14 @@
+package com.gisinc.showcase.multiscreen.model
+{
+	[Bindable]
+	public class ApplicationModel
+	{
+		public static const MOBILE_SCREEN_TYPE:String = "mobile";
+		
+		public var screenType:String;
+		
+		public function ApplicationModel()
+		{
+		}
+	}
+}

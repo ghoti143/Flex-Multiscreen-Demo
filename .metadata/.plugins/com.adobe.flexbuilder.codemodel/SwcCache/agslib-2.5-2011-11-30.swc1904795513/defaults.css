@@ -1,0 +1,233 @@
+/* Defaults CSS file */
+
+@namespace esri "http://www.esri.com/2008/ags";
+
+/*
+//------------------------------
+//  AttachmnentInspector
+//------------------------------
+*/
+
+esri|AttachmentInspector
+{
+    skinClass: ClassReference("com.esri.ags.skins.AttachmentInspectorSkin");
+}
+
+/*
+//------------------------------
+//  AttributeInspector
+//------------------------------
+*/
+
+esri|AttributeInspector
+{
+    skinClass: ClassReference("com.esri.ags.skins.AttributeInspectorSkin");
+    formMaxHeight: 400;
+}
+
+/*
+//------------------------------
+//  AttributeInspector
+//------------------------------
+*/
+
+esri|Editor
+{
+    skinClass : ClassReference("com.esri.ags.skins.EditorSkin");
+}
+
+/*
+//------------------------------
+//  InfoWindow
+//------------------------------
+*/
+
+esri|InfoWindow
+{
+    skinClass: ClassReference("com.esri.ags.skins.InfoWindowSkin");
+    backgroundColor: #999999;
+    backgroundAlpha: 1.0;
+    borderThickness: 0;
+    borderColor: #000000;
+    borderAlpha: 1.0;
+    infoPlacementMode: auto;
+    infoPlacement: upperRight;
+    infoOffsetX: 12;
+    infoOffsetY: 12;
+    infoOffsetW: 10;
+    verticalGap: 3;
+    paddingLeft: 3;
+    paddingRight: 3;
+    paddingTop: 3;
+    paddingBottom: 3;
+    upperLeftRadius: 5;
+    upperRightRadius: 5;
+    lowerLeftRadius: 5;
+    lowerRightRadius: 5;
+    shadowDistance: 0;
+    shadowAlpha: 1.0;
+    shadowAngle: 45.0;
+    shadowColor: #000000;
+}
+
+/*
+//------------------------------
+//  InfoWindowLabel
+//------------------------------
+*/
+
+esri|InfoWindowLabel
+{
+    fontWeight: bold;
+    fontSize: 12;
+}
+
+/*
+//------------------------------
+//  InfoWindowCloseButton
+//------------------------------
+*/
+
+esri|InfoWindowCloseButton
+{
+    skinClass: ClassReference("com.esri.ags.skins.InfoWindowCloseButtonSkin");
+}
+
+/*
+//------------------------------
+//  InfoSymbolWindow
+//------------------------------
+*/
+
+esri|InfoSymbolWindow
+{
+    skinClass: ClassReference("com.esri.ags.skins.InfoSymbolWindowSkin");
+    paddingLeft: 3;
+    paddingRight: 3;
+    paddingTop: 3;
+    paddingBottom: 3;
+    backgroundColor: #999999;
+    backgroundAlpha: 1.0;
+    borderThickness: 0;
+    borderColor: #000000;
+    borderAlpha: 1.0;
+    upperLeftRadius: 5;
+    upperRightRadius: 5;
+    lowerLeftRadius: 5;
+    lowerRightRadius: 5;
+    infoPlacementMode: auto;
+    infoPlacement: upperRight;
+    infoOffsetX: 12;
+    infoOffsetY: 12;
+    infoOffsetW: 10;
+    shadowDistance: 0.0;
+    shadowAlpha: 1.0;
+    shadowAngle: 45.0;
+    shadowColor: #000000;
+}
+
+/*
+//------------------------------
+//  Legend
+//------------------------------
+*/
+esri|Legend
+{
+    skinClass: ClassReference("com.esri.ags.skins.LegendSkin");
+}
+
+/*
+//------------------------------
+//  Map
+//------------------------------
+*/
+
+esri|Map
+{
+    crosshairAlpha: 1.0;
+    crosshairColor: #000000;
+    crosshairLength: 10;
+    crosshairWidth: 1;
+
+    rubberbandFillStyle: "outside";
+    rubberbandFillAlpha: 0.5;
+    rubberbandFillColor: #000000;
+    rubberbandLineAlpha: 1.0;
+    rubberbandLineColor: #FF0000;
+    rubberbandLineWidth: 2;
+
+    panDownSkin: Embed(source="assets/pan/pan-s.png");
+    panLeftSkin: Embed(source="assets/pan/pan-w.png");
+    panLowerLeftSkin: Embed(source="assets/pan/pan-sw.png");
+    panLowerRightSkin: Embed(source="assets/pan/pan-se.png");
+    panRightSkin: Embed(source="assets/pan/pan-e.png");
+    panUpperLeftSkin: Embed(source="assets/pan/pan-nw.png");
+    panUpperRightSkin: Embed(source="assets/pan/pan-ne.png");
+    panUpSkin: Embed(source="assets/pan/pan-n.png");
+    panSkinOffset: 5;
+}
+
+/*
+//------------------------------
+//  Navigation
+//------------------------------
+*/
+
+esri|Navigation
+{
+    skinClass: ClassReference("com.esri.ags.skins.NavigationSkin");
+    left: 20;
+    top: 20;
+}
+
+/*
+//------------------------------
+//  PopUpRenderer
+//------------------------------
+*/
+
+esri|PopUpRenderer
+{
+    skinClass: ClassReference("com.esri.ags.skins.PopUpRendererSkin");
+    linkActiveColor: #FF0000;
+    linkHoverColor: #0000EE;
+    linkNormalColor: #0000EE;
+}
+
+/*
+//------------------------------
+//  ScaleBar
+//------------------------------
+*/
+
+esri|ScaleBar
+{
+    skinClass: ClassReference("com.esri.ags.skins.ScaleBarSkin");
+    left: 5;
+    bottom: 15;
+    fontFamily: "Verdana";
+    fontSize: 9;
+    fontWeight: "bold";
+}
+
+/*
+//------------------------------
+//  TemplatePicker
+//------------------------------
+*/
+
+esri|TemplatePicker
+{
+    skinClass: ClassReference("com.esri.ags.skins.TemplatePickerSkin");
+}
+
+/*
+//------------------------------
+//  TimeSlider
+//------------------------------
+*/
+
+esri|TimeSlider
+{
+    skinClass: ClassReference("com.esri.ags.skins.TimeSliderSkin");
+}

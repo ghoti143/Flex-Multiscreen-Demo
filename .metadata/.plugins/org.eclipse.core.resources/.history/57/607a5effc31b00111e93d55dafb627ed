@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:view="mil.anc.map.view.*"
+		 currentState="{pm.currentState}">
+	<fx:Script>
+		<![CDATA[
+			import mil.anc.map.presentation.MainPM;
+			
+			[Bindable][Inject]
+			public var pm:MainPM;
+			
+			[PostConstruct]
+			public function init():void
+			{
+				pm.registerPrintCanvas(printCanvas);
+				pm.registerAccessibilityPane(accessibilityPane);
+			}
+		]]>
+	</fx:Script>
+	<fx:Style source="assets/css/style.css" />
+	
+	<view:MapView top="75" right="0" bottom="0" left="306" />
+	<view:SidePanelView width="306" top="75" bottom="0" left="0" />
+	<view:HeaderView width="100%" top="0" height="75" />
+	<view:ModalWindowView top="0" right="0" bottom="0" left="0" />
+	
+	<view:ApplicationResetView height="100%" width="100%"
+							   visible="{pm.showTimeoutWarning}"
+							   includeInLayout="{pm.showTimeoutWarning}" />
+	
+	<s:Group id="printCanvas" top="-5000" left="-5000"></s:Group>
+	<s:Group id="accessibilityPane" top="0" left="0"></s:Group>
+</s:Group>

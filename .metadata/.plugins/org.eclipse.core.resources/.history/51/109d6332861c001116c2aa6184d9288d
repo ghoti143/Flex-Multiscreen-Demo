@@ -1,0 +1,27 @@
+package com.gisinc.showcase.multiscreen.mobile.pm
+{
+	import flash.events.IEventDispatcher;
+	
+	import mx.events.FlexEvent;
+	
+	import spark.components.ViewNavigator;
+	import spark.components.ViewNavigatorApplication;
+
+	public class MobileApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		public var navigator:ViewNavigator;
+		
+		public function MobileApplicationPM()
+		{			
+		}
+		
+		public function handleApplicationComplete(event:FlexEvent):void
+		{
+			var app:ViewNavigatorApplication = event.currentTarget as ViewNavigatorApplication;
+			
+		}
+	}	
+}

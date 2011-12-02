@@ -1,0 +1,22 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	import com.esri.ags.events.MapMouseEvent;
+	import com.gisinc.showcase.multiscreen.event.MappingEvent;
+	
+	import flash.events.IEventDispatcher;
+
+	public class MapPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		public function MapPM()
+		{			
+		}
+		
+		public function handleMapClick(event:MapMouseEvent):void
+		{
+			dispatcher.dispatchEvent(new MappingEvent(MappingEvent.MAP_CLICK, event.mapPoint));
+		}
+	}	
+}

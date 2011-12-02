@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:view="com.gisinc.showcase.multiscreen.view.*"
+		 currentState="{pm.currentState}">
+	<fx:Script>
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.ParcelInfoSymbolPM;
+			
+			import mx.events.FlexEvent;
+			
+			[Bindable][Inject]
+			public var pm:ParcelInfoSymbolPM;
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="hidden" />
+		<s:State name="visible" />
+	</s:states>
+	
+	<s:BorderContainer creationComplete="infoContainerCreationCompleteHandler(event)" includeIn="visible" borderWeight="2" borderVisible="true">
+		
+		<s:VGroup paddingTop="15" paddingRight="15" paddingBottom="15" paddingLeft="15">
+				
+			<view:ParcelDataView data="{pm.currentParcel.attributes}" />
+			
+			<s:Line height="1" width="100%" />
+			
+			<s:HGroup horizontalAlign="center" width="100%">
+				<s:Button label="Get Directions" buttonMode="true" />
+				<s:Button label="More Info" buttonMode="true" />
+			</s:HGroup>
+		</s:VGroup>
+		
+		<s:Image source="{pm.close_button}" top="-20" right="-20" click="pm.handleCloseButtonClick(event)" buttonMode="true" />
+	</s:BorderContainer>
+</s:Group>

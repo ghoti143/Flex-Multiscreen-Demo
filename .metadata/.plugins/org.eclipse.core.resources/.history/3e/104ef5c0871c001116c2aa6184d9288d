@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:component="mil.anc.map.view.component.*"
+				currentState="{pm.currentState}">
+	<fx:Script>
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.ParcelInfoSymbolPM;
+			
+			[Bindable][Inject]
+			public var pm:ParcelInfoSymbolPM;
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="web" />
+		<s:State name="kiosk" />
+	</s:states>
+	
+	<s:BorderContainer styleName="infoSymbol" creationComplete="bordercontainer1_creationCompleteHandler(event)" focusIn="bordercontainer1_focusInHandler(event)">
+		<s:VGroup paddingTop="15" paddingRight="15" paddingBottom="15" paddingLeft="15">
+			<s:HGroup>
+				<component:IntermentDetails id="intDet" data="{data}" />
+				<s:Image source="{data.frontImageUrl}" height="150" width="100" />
+			</s:HGroup>
+			
+			<s:Line height="1" width="100%" />
+			
+			<s:HGroup horizontalAlign="center" width="100%">
+				<s:Button label="Get Directions" styleName="wizardCommandButton"
+						  click="pm.handleDirectionsButtonClick(data.issID)"
+						  includeIn="kiosk" buttonMode="true"
+						  tabIndex="2" />
+				<s:Button label="View Large Photos" styleName="wizardCommandButton"
+						  click="pm.handleViewPhotoClick(data)" buttonMode="true"
+						  tabIndex="3" />
+			</s:HGroup>			
+		</s:VGroup>
+		
+		<s:Image source="{pm.assetModel.close_button}" top="-20" right="-20" click="pm.handleCloseButtonClick(event)" buttonMode="true" />
+		<!-- TODO: fix so that close button isn't over tail when point is to upper right of symbol -->
+	</s:BorderContainer>
+	
+</s:ItemRenderer>

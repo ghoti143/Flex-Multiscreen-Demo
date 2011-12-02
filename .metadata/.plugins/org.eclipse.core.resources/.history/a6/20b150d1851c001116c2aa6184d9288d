@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:esri="http://www.esri.com/2008/ags"
+		xmlns:view="com.gisinc.showcase.multiscreen.view.*"
+		title="Map View">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+
+	<fx:Script>
+		<![CDATA[
+			import com.esri.ags.Graphic;
+			
+			[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="parcel")]
+			public function handleShowDetails(parcel:Graphic):void
+			{
+				navigator.pushView(ParcelDetailsView, parcel.attributes);
+			}
+		]]>
+	</fx:Script>
+	
+	<view:MapView height="100%" width="100%" />
+</s:View>

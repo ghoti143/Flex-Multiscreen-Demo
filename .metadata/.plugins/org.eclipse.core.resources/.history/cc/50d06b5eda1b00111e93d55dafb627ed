@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:component="mil.anc.map.view.component.*"
+		 currentState="{pm.currentState}">
+	<fx:Script>
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.ParcelInfoSymbolPM;
+			
+			[Bindable][Inject]
+			public var pm:ParcelInfoSymbolPM;
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="web" />
+		<s:State name="kiosk" />
+	</s:states>
+	
+	<s:BorderContainer styleName="infoSymbol">
+		<s:VGroup paddingTop="15" paddingRight="15" paddingBottom="15" paddingLeft="15">
+			<s:HGroup>
+				<s:VGroup>
+					<component:EmbossedLabel text="{data.name}" foreColor="0x000000" backColor="0xffffff" styleName="bold" width="{labelWidth}" />
+					<component:EmbossedLabel text="{data.subtitle}" foreColor="0x000000" backColor="0xffffff" width="{labelWidth}" visible="{data.subtitle != null}" includeInLayout="{data.subtitle != null}" />
+					<component:EmbossedLabel text="{data.summary}" foreColor="0x000000" backColor="0xffffff" width="{labelWidth}" />
+				</s:VGroup>
+			</s:HGroup>
+			
+			<s:Line height="1" width="100%" />
+			
+			<s:HGroup horizontalAlign="center" width="100%">
+				<s:Button label="Get Directions" styleName="wizardCommandButton" click="" includeIn="kiosk" buttonMode="true" />
+				<s:Button label="More Info" styleName="wizardCommandButton" click="" buttonMode="true" />
+			</s:HGroup>
+		</s:VGroup>
+		
+		<s:Image source="{pm.close_button}" top="-20" right="-20" click="pm.handleCloseButtonClick(event)" buttonMode="true" />
+	</s:BorderContainer>
+	
+</s:ItemRenderer>

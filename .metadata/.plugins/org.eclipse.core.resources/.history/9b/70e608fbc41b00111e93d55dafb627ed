@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:esri="http://www.esri.com/2008/ags">
+	
+	<fx:Script> 
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.MapPM;
+			[Bindable][Inject]
+			public var pm:MapPM;
+		]]>
+	</fx:Script>
+	
+	<esri:Map height="100%" width="100%" mapClick="pm.handleMapClick(event)">
+		<esri:extent>
+			<esri:Extent xmin="-9276552" ymin="5239734" xmax="-9261711" ymax="5255311" />
+		</esri:extent>
+		<esri:ArcGISTiledMapServiceLayer url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" />
+		<esri:ArcGISDynamicMapServiceLayer url="http://localgovtemplates2.esri.com/ArcGIS/rest/services/Bloomfield/TaxParcelQuery/MapServer" />
+	</esri:Map>
+</s:Group>

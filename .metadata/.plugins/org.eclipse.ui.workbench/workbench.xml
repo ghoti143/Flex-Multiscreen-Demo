@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="43" version="2.0">
+<workbenchAdvisor/>
+<window height="728" maximized="true" width="1024" x="25" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="160" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="198" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1322703180599" focus="true" label="Workspace - Flash">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Android.mxml" partName="Android.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/Android.mxml" title="Android.mxml" tooltip="Android/src/Android.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/Android.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MapView.mxml" partName="MapView.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/com/gisinc/showcase/multiscreen/mobile/view/MapView.mxml" title="MapView.mxml" tooltip="Android/src/com/gisinc/showcase/multiscreen/mobile/view/MapView.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/MapView.mxml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Android-app.xml" partName="Android-app.xml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/Android-app.xml" title="Android-app.xml" tooltip="Android/src/Android-app.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/Android-app.xml"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Android-app.xml" partName="Android-app.xml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/Android-app.xml" title="Android-app.xml" tooltip="Android/src/Android-app.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/Android-app.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="3930"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Beans.mxml" partName="Beans.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/bean/Beans.mxml" title="Beans.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/bean/Beans.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/bean/Beans.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MapView.mxml" partName="MapView.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/view/MapView.mxml" title="MapView.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/MapView.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/MapView.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MapPM.as" partName="MapPM.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/pm/MapPM.as" title="MapPM.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/pm/MapPM.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/pm/MapPM.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="995" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MappingEvent.as" partName="MappingEvent.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/event/MappingEvent.as" title="MappingEvent.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/event/MappingEvent.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/event/MappingEvent.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="673" selectionTopPixel="102"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MapController.as" partName="MapController.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/controller/MapController.as" title="MapController.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/controller/MapController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/controller/MapController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="4214" selectionTopPixel="1468"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Parcel.as" partName="Parcel.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/domain/Parcel.as" title="Parcel.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/domain/Parcel.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/domain/Parcel.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="258" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ApplicationController.as" partName="ApplicationController.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/controller/ApplicationController.as" title="ApplicationController.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/controller/ApplicationController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/controller/ApplicationController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="328" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ApplicationModel.as" partName="ApplicationModel.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/model/ApplicationModel.as" title="ApplicationModel.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/model/ApplicationModel.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/model/ApplicationModel.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="215" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ApplicationEvent.as" partName="ApplicationEvent.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/event/ApplicationEvent.as" title="ApplicationEvent.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/event/ApplicationEvent.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/event/ApplicationEvent.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="64" selectionOffset="134" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Desktop.mxml" partName="Desktop.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Desktop/src/Desktop.mxml" title="Desktop.mxml" tooltip="Desktop/src/Desktop.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Desktop/src/Desktop.mxml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Desktop-app.xml" partName="Desktop-app.xml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Desktop/src/Desktop-app.xml" title="Desktop-app.xml" tooltip="Desktop/src/Desktop-app.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Desktop/src/Desktop-app.xml"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Desktop-app.xml" partName="Desktop-app.xml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Desktop/src/Desktop-app.xml" title="Desktop-app.xml" tooltip="Desktop/src/Desktop-app.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Desktop/src/Desktop-app.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3364" selectionTopPixel="1122"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ParcelInfoSymbolPM.as" partName="ParcelInfoSymbolPM.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/pm/ParcelInfoSymbolPM.as" title="ParcelInfoSymbolPM.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/pm/ParcelInfoSymbolPM.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/pm/ParcelInfoSymbolPM.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="569" selectionTopPixel="75"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelDataView.mxml" partName="ParcelDataView.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml" title="ParcelDataView.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelInfoSymbolView.mxml" partName="ParcelInfoSymbolView.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelInfoSymbolView.mxml" title="ParcelInfoSymbolView.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelInfoSymbolView.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelInfoSymbolView.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MobileBeans.mxml" partName="MobileBeans.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/MobileBeans.mxml" title="MobileBeans.mxml" tooltip="Android/src/MobileBeans.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/MobileBeans.mxml"/>
+</editor>
+<editor focus="true" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelDetailsView.mxml" partName="ParcelDetailsView.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml" title="ParcelDetailsView.mxml" tooltip="Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MobileApplicationPM.as" partName="MobileApplicationPM.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Android/src/com/gisinc/showcase/multiscreen/mobile/pm/MobileApplicationPM.as" title="MobileApplicationPM.as" tooltip="Android/src/com/gisinc/showcase/multiscreen/mobile/pm/MobileApplicationPM.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/pm/MobileApplicationPM.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="767" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="DesktopApplicationPM.as" partName="DesktopApplicationPM.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as" title="DesktopApplicationPM.as" tooltip="Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1172" selectionTopPixel="544"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="DesktopBeans.mxml" partName="DesktopBeans.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/Desktop/src/DesktopBeans.mxml" title="DesktopBeans.mxml" tooltip="Desktop/src/DesktopBeans.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Desktop/src/DesktopBeans.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="InfoSymbol2.as" partName="InfoSymbol2.as" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/esri/ags/symbols/InfoSymbol2.as" title="InfoSymbol2.as" tooltip="sharedLib/src/com/esri/ags/symbols/InfoSymbol2.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/esri/ags/symbols/InfoSymbol2.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelInfoSymbolRenderer.mxml" partName="ParcelInfoSymbolRenderer.mxml" path="C:/Development/Workspaces/FB45/MultiPlatformDemo/sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/ParcelInfoSymbolRenderer.mxml" title="ParcelInfoSymbolRenderer.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/ParcelInfoSymbolRenderer.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/ParcelInfoSymbolRenderer.mxml"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="751"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
+<fpeExpanded>
+<fpeElement fpePath="/Android"/>
+<fpeElement fpePath="/Android/src"/>
+<fpeElement fpePath="/Android/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/Android/src/Android.mxml"/>
+<fpeElement fpePath="/Android/src/Android.mxml"/>
+<fpeElement fpePath="/Android/src/com/gisinc/showcase/multiscreen/mobile"/>
+<fpeElement fpePath="/Android/src/com/gisinc/showcase/multiscreen/mobile/pm"/>
+<fpeElement fpePath="/Android/src/com/gisinc/showcase/multiscreen/mobile/view"/>
+<fpeElement fpePath="/Desktop"/>
+<fpeElement fpePath="/Desktop/src"/>
+<fpeElement fpePath="/Desktop/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm"/>
+<fpeElement fpePath="/sharedLib"/>
+<fpeElement fpePath="/sharedLib/src"/>
+<fpeElement fpePath="/sharedLib/libs"/>
+</fpeExpanded>
+<filters>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/Android"/>
+<element path="/Android/src/Android.mxml"/>
+<element path="/Desktop"/>
+<element path="/sharedLib"/>
+<element path="/sharedLib/libs"/>
+</expanded>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="Network Monitor">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer" partName="ASDoc">
+<viewState/>
+</view>
+</views>
+<perspectives activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.editorcore.modeswitch"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.designview.activationcontrol"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.states.StatesViewer"/>
+<show_view_action id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newflashcatalystproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.adobe.flexbuilder.packageexplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.team.ui.GenericHistoryView"/>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1144026">
+<folder activePageID="com.adobe.flexbuilder.packageexplorer" appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.packageexplorer" label="Package Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1144026">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2022001" ratioLeft="386" ratioRight="1523" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1144026"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e51960" ratio="0.65" ratioLeft="520" ratioRight="280" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.mxml.editor.states.StatesViewer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="propertiesHolder" ratio="0.24876441" ratioLeft="151" ratioRight="456" relationship="4" relative="org.eclipse.ui.internal.ViewStack@e51960">
+<folder appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.mxml.editor.AppearanceView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottomLayout" ratio="0.63870966" ratioLeft="396" ratioRight="224" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
+<page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="ASDoc"/>
+<page content="com.adobe.flexbuilder.mxml.editor.design.internal.errors.view.DesignModeProblemsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="outlineHolder" ratio="0.7225807" ratioLeft="448" ratioRight="172" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1144026">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.adobe.flexbuilder.mxml.editor.components.ComponentsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.debug.ui.perspectives.FlexDebugPerspectiveFactory" id="com.adobe.flexbuilder.debug.ui.perspectives.debug" label="Flash Debug"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.editorcore.modeswitch"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.designview.activationcontrol"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.states.StatesViewer"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newflashcatalystproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.88870966" ratioLeft="551" ratioRight="69" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@8ec64" ratio="0.12773722" ratioLeft="70" ratioRight="478" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.35793358" ratioLeft="485" ratioRight="870" relationship="2" relative="org.eclipse.ui.internal.ViewStack@8ec64"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/controller/MapController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/pm/MobileApplicationPM.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/Desktop/src/Desktop.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Desktop/src/Desktop-app.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/ParcelDataView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Android/src/Android-app.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Desktop/src/Desktop-app.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/MapView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/pm/MobileApplicationPM.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/MapView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/pm/MapPM.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/sharedLib/src/com/gisinc/showcase/multiscreen/controller/MapController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Android/src/Android.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Desktop/src/Desktop.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/Foo/src/Foo.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Foo/src/Foo-app.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/Android/src/com/gisinc/showcase/multiscreen/mobile/view/ParcelDetailsView.mxml"/>
+</editors>
+<item historyLabel="Desktop.mxml" index="3">
+<position info="not_deleted" x="455" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="0">
+<position info="not_deleted" x="3633" y="0"/>
+</item>
+<item historyLabel="Desktop-app.xml" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="0">
+<position info="not_deleted" x="3633" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="0">
+<position info="not_deleted" x="4279" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1024" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1067" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1108" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1187" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1238" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1367" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1402" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1476" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1501" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="0">
+<position info="not_deleted" x="3705" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="0">
+<position info="not_deleted" x="3743" y="0"/>
+</item>
+<item historyLabel="DesktopApplicationPM.as" index="1">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="MobileApplicationPM.as" index="2">
+<position info="not_deleted" x="927" y="0"/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="6">
+<position/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="6">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="ParcelDetailsView.mxml" index="7">
+<position info="not_deleted" x="432" y="0"/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="5">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="8">
+<position/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="8">
+<position/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="8">
+<position/>
+</item>
+<item historyLabel="ParcelDataView.mxml" index="8">
+<position info="not_deleted" x="901" y="0"/>
+</item>
+<item historyLabel="Android-app.xml" index="9"/>
+<item historyLabel="Desktop-app.xml" index="10"/>
+<item historyLabel="MapView.mxml" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ParcelDetailsView.mxml" index="12">
+<position info="not_deleted" x="448" y="14"/>
+</item>
+<item historyLabel="MapView.mxml" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MobileApplicationPM.as" index="13">
+<position info="not_deleted" x="927" y="0"/>
+</item>
+<item historyLabel="MapView.mxml" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MapPM.as" index="15">
+<position info="not_deleted" x="847" y="0"/>
+</item>
+<item historyLabel="MapPM.as" index="15">
+<position info="not_deleted" x="355" y="5"/>
+</item>
+<item historyLabel="MapController.as" index="16">
+<position info="not_deleted" x="3743" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="16">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="MapController.as" index="16">
+<position info="not_deleted" x="4214" y="21"/>
+</item>
+<item historyLabel="MobileApplicationPM.as" index="13">
+<position info="not_deleted" x="767" y="21"/>
+</item>
+<item historyLabel="Android.mxml" index="17">
+<position info="not_deleted" x="1045" y="0"/>
+</item>
+<item historyLabel="Desktop.mxml" index="18">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="Android-app.xml" index="9"/>
+<item historyLabel="Foo.mxml" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Foo-app.xml" index="20"/>
+<item historyLabel="Android-app.xml" index="9"/>
+<item historyLabel="ParcelDetailsView.mxml" index="12">
+<position info="not_deleted" x="448" y="14"/>
+</item>
+<item historyLabel="ParcelDetailsView.mxml" index="21">
+<position info="not_deleted" x="533" y="0"/>
+</item>
+<item active="true" historyLabel="ParcelDetailsView.mxml" index="21">
+<position info="not_deleted" x="463" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Foo-app.xml" tooltip="Foo/src/Foo-app.xml">
+<persistable path="/Foo/src/Foo-app.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="FooHomeView.mxml" tooltip="Foo/src/views/FooHomeView.mxml">
+<persistable path="/Foo/src/views/FooHomeView.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Foo.mxml" tooltip="Foo/src/Foo.mxml">
+<persistable path="/Foo/src/Foo.mxml"/>
+</file>
+<file factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" id="com.adobe.flexbuilder.ui.StartPage" name="Web Browser" tooltip="Flash Builder Welcome Screen">
+<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Welcome Screen" url="file:/C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/eclipse/plugins/com.adobe.flexbuilder.ui_4.6.0.328916/welcome/index.html?firstLaunch=false&amp;edition=prem&amp;version=460"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelInfoSymbolRenderer.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/ParcelInfoSymbolRenderer.mxml">
+<persistable path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/ParcelInfoSymbolRenderer.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="InfoSymbol2.as" tooltip="sharedLib/src/com/esri/views/InfoSymbol2.as">
+<persistable path="/sharedLib/src/com/esri/views/InfoSymbol2.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="DesktopBeans.mxml" tooltip="Desktop/src/DesktopBeans.mxml">
+<persistable path="/Desktop/src/DesktopBeans.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="IntermentInfoSymbolRenderer.mxml" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/IntermentInfoSymbolRenderer.mxml">
+<persistable path="/sharedLib/src/com/gisinc/showcase/multiscreen/view/renderer/IntermentInfoSymbolRenderer.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="IntermentInfoSymbolRenderer.mxml" tooltip="Desktop/src/com/gisinc/showcase/multiscreen/desktop/view/renderer/IntermentInfoSymbolRenderer.mxml">
+<persistable path="/Desktop/src/com/gisinc/showcase/multiscreen/desktop/view/renderer/IntermentInfoSymbolRenderer.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="DesktopApplicationPM.as" tooltip="Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as">
+<persistable path="/Desktop/src/com/gisinc/showcase/multiscreen/desktop/pm/DesktopApplicationPM.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MobileApplicationPM.as" tooltip="Android/src/pm/MobileApplicationPM.as">
+<persistable path="/Android/src/pm/MobileApplicationPM.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ParcelDetailsView.mxml" tooltip="Android/src/views/ParcelDetailsView.mxml">
+<persistable path="/Android/src/views/ParcelDetailsView.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Beans.mxml" tooltip="Android/src/Beans.mxml">
+<persistable path="/Android/src/Beans.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MobileApplicationPM.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/pm/MobileApplicationPM.as">
+<persistable path="/sharedLib/src/com/gisinc/showcase/multiscreen/pm/MobileApplicationPM.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="IApplicationPM.as" tooltip="sharedLib/src/com/gisinc/showcase/multiscreen/pm/IApplicationPM.as">
+<persistable path="/sharedLib/src/com/gisinc/showcase/multiscreen/pm/IApplicationPM.as"/>
+</file>
+</mruList>
+</workbench>

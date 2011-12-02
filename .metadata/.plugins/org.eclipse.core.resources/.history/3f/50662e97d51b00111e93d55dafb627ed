@@ -1,0 +1,31 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	import com.esri.ags.events.MapMouseEvent;
+	import com.esri.ags.geometry.Extent;
+	import com.gisinc.showcase.multiscreen.event.MappingEvent;
+	
+	import flash.events.IEventDispatcher;
+	
+	import mx.collections.ArrayCollection;
+
+	public class MapPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		[Bindable][Inject("mapModel.extent", bind="true", twoWay="true")]
+		public var extent:Extent;
+		
+		[Bindable][Inject("mapModel.layers", bind="true")]
+		public var layers:ArrayCollection;
+		
+		public function MapPM()
+		{			
+		}
+		
+		public function handleMapClick(event:MapMouseEvent):void
+		{
+			dispatcher.dispatchEvent(new MappingEvent(MappingEvent.MAP_CLICK, event.mapPoint));
+		}
+	}	
+}

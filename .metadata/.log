@@ -1,0 +1,1715 @@
+!SESSION 2011-11-30 20:32:54.394 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Development\Workspaces\FB45\MultiPlatformDemo
+
+!ENTRY org.eclipse.ui 2 0 2011-11-30 20:32:57.637
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-11-30 20:32:57.637
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.jface 2 0 2011-11-30 20:45:49.353
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-11-30 20:45:49.353
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		ActionHandler(com.adobe.flexbuilder.as.editor.ui.packageexplorer.actions.FlexPackageExplorerFindAllDeclarationsAction@11f61a5),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		ActionHandler(com.adobe.flexbuilder.as.editor.ui.packageexplorer.actions.FlexPackageExplorerFindAllDeclarationsAction@11f61a5),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-11-30 20:45:49.353
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,References in Workspace,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		ActionHandler(com.adobe.flexbuilder.as.editor.ui.packageexplorer.actions.FlexPackageExplorerFindAllReferencesAction@1439c50),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		ActionHandler(com.adobe.flexbuilder.as.editor.ui.packageexplorer.actions.FlexPackageExplorerFindAllReferencesAction@1439c50),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+
+!ENTRY com.adobe.flexide.designitems 4 1 2011-12-01 00:06:52.060
+!MESSAGE Custom component model has recursive definition: views.ParcelDetailsView
+
+!ENTRY com.adobe.flexide.designitems 4 1 2011-12-01 00:07:05.565
+!MESSAGE Custom component model has recursive definition: views.ParcelDetailsView
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:07:20.134
+!MESSAGE Exception in design view callback: addItem(spark.components.HGroup,com.adobe.flexide.extensions.components.spark.components.HGroupExtension,mxmlContent46,[object Object],[object Object],-1)
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.log(FlexProjectCore.java:858)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:56)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:41)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks.reportInternalError(MXMLDesignView4Controller.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.adobe.flexide.playerview.DesignCall.invoke(DesignCall.java:96)
+	at com.adobe.flexide.playerview.PlayerListenerHost.notifyDesignCall(PlayerListenerHost.java:173)
+	at com.adobe.flexide.playerview.PlayerListenerHost.callFunction(PlayerListenerHost.java:47)
+	at com.adobe.flexide.embeddedplayer.PlayerNativeCallbacks.CallJavaFunction(PlayerNativeCallbacks.java:48)
+	at com.adobe.flexide.embeddedplayer.PlayerNatives.CallActionScript(Native Method)
+	at com.adobe.flexide.embeddedplayer.ExternalPlayer.callFunction2(ExternalPlayer.java:94)
+	at com.adobe.flexide.designitems.surface.Commander.invokePlayerFunction(Commander.java:149)
+	at com.adobe.flexide.designitems.surface.DesignCommander.addItem(DesignCommander.java:200)
+	at com.adobe.flexide.designitems.surface.DesignVisitor.processItem(DesignVisitor.java:425)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitItem(ModelWalker.java:403)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitArrayProperties(ModelWalker.java:547)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitItem(ModelWalker.java:419)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitArrayProperties(ModelWalker.java:547)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitItem(ModelWalker.java:419)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitArrayProperties(ModelWalker.java:547)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitRootItem(ModelWalker.java:161)
+	at com.adobe.flexide.designitems.surface.DesignSurface.addItem(DesignSurface.java:1100)
+	at com.adobe.flexide.designitems.surface.ModelListener.handleAdd(ModelListener.java:212)
+	at com.adobe.flexide.designitems.surface.ModelListener.processEvents(ModelListener.java:148)
+	at com.adobe.flexide.designitems.surface.ModelListener.modelChanged(ModelListener.java:112)
+	at com.adobe.flexbuilder.designmodel.DesignModel.doNotifyChanged(DesignModel.java:348)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:276)
+	at com.adobe.flexbuilder.designmodel.DesignModel.endNotificationBatch(DesignModel.java:201)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel$MyBaseModelListener.modelChanged(SMXMLModel.java:336)
+	at com.adobe.flexbuilder.designmodel.WeakModelListener.modelChanged(WeakModelListener.java:79)
+	at com.adobe.flexbuilder.designmodel.DesignModel.doNotifyChanged(DesignModel.java:361)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:276)
+	at com.adobe.flexbuilder.designmodel.DesignModel.endNotificationBatch(DesignModel.java:201)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.endBatch(DocumentTextProvider.java:531)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.doProcessCodeEvents(DocumentTextProvider.java:577)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.access$1(DocumentTextProvider.java:536)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider$EventQueueProcessor.run(DocumentTextProvider.java:237)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:07:20.178
+!MESSAGE Exception in design view callback: endRootItem(ItemRenderer41,Document0)
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.log(FlexProjectCore.java:858)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:56)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:41)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks.reportInternalError(MXMLDesignView4Controller.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.adobe.flexide.playerview.DesignCall.invoke(DesignCall.java:96)
+	at com.adobe.flexide.playerview.PlayerListenerHost.notifyDesignCall(PlayerListenerHost.java:173)
+	at com.adobe.flexide.playerview.PlayerListenerHost.callFunction(PlayerListenerHost.java:47)
+	at com.adobe.flexide.embeddedplayer.PlayerNativeCallbacks.CallJavaFunction(PlayerNativeCallbacks.java:48)
+	at com.adobe.flexide.embeddedplayer.PlayerNatives.CallActionScript(Native Method)
+	at com.adobe.flexide.embeddedplayer.ExternalPlayer.callFunction2(ExternalPlayer.java:94)
+	at com.adobe.flexide.playerview.PlayerCaller.callFunction(PlayerCaller.java:73)
+	at com.adobe.flexide.designitems.surface.Commander.callPlayerFunctionNoStrip(Commander.java:99)
+	at com.adobe.flexide.designitems.surface.DesignCommander.endRootItem(DesignCommander.java:356)
+	at com.adobe.flexide.designitems.surface.DesignVisitor.endRootItem(DesignVisitor.java:234)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitRootItem(ModelWalker.java:169)
+	at com.adobe.flexide.designitems.surface.DesignSurface.addItem(DesignSurface.java:1100)
+	at com.adobe.flexide.designitems.surface.ModelListener.handleAdd(ModelListener.java:212)
+	at com.adobe.flexide.designitems.surface.ModelListener.processEvents(ModelListener.java:148)
+	at com.adobe.flexide.designitems.surface.ModelListener.modelChanged(ModelListener.java:112)
+	at com.adobe.flexbuilder.designmodel.DesignModel.doNotifyChanged(DesignModel.java:348)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:276)
+	at com.adobe.flexbuilder.designmodel.DesignModel.endNotificationBatch(DesignModel.java:201)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel$MyBaseModelListener.modelChanged(SMXMLModel.java:336)
+	at com.adobe.flexbuilder.designmodel.WeakModelListener.modelChanged(WeakModelListener.java:79)
+	at com.adobe.flexbuilder.designmodel.DesignModel.doNotifyChanged(DesignModel.java:361)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:276)
+	at com.adobe.flexbuilder.designmodel.DesignModel.endNotificationBatch(DesignModel.java:201)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.endBatch(DocumentTextProvider.java:531)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.doProcessCodeEvents(DocumentTextProvider.java:577)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider.access$1(DocumentTextProvider.java:536)
+	at com.adobe.flexbuilder.designmodel.DocumentTextProvider$EventQueueProcessor.run(DocumentTextProvider.java:237)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:07:20.206
+!MESSAGE Exception in design view callback: addItem(spark.components.HGroup,com.adobe.flexide.extensions.components.spark.components.HGroupExtension,mxmlContent57,[object Object],[object Object],-1)
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.log(FlexProjectCore.java:858)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:56)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:41)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks.reportInternalError(MXMLDesignView4Controller.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.adobe.flexide.playerview.DesignCall.invoke(DesignCall.java:96)
+	at com.adobe.flexide.playerview.PlayerListenerHost.notifyDesignCall(PlayerListenerHost.java:173)
+	at com.adobe.flexide.playerview.PlayerListenerHost.callFunction(PlayerListenerHost.java:47)
+	at com.adobe.flexide.embeddedplayer.PlayerNativeCallbacks.CallJavaFunction(PlayerNativeCallbacks.java:48)
+	at com.adobe.flexide.embeddedplayer.PlayerNatives.CallActionScript(Native Method)
+	at com.adobe.flexide.embeddedplayer.ExternalPlayer.callFunction2(ExternalPlayer.java:94)
+	at com.adobe.flexide.designitems.surface.Commander.invokePlayerFunction(Commander.java:149)
+	at com.adobe.flexide.designitems.surface.DesignCommander.addItem(DesignCommander.java:200)
+	at com.adobe.flexide.designitems.surface.DesignVisitor.processItem(DesignVisitor.java:425)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitItem(ModelWalker.java:403)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitArrayProperties(ModelWalker.java:547)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitItem(ModelWalker.java:419)
+	at com.adobe.flexide.designitems.modeltree.ModelWalker.visitMXMLItem(ModelWalker.java:190)
+	at com.adobe.flexide.designitems.surface.DesignSurface.addItem(DesignSurface.java:1116)
+	at com.adobe.flexide.designitems.surface.DesignSurface.privateRefreshItem(DesignSurface.java:1270)
+	at com.adobe.flexide.designitems.surface.DesignSurface.refreshItem(DesignSurface.java:1191)
+	at com.adobe.flexide.designitems.surface.DesignSurface.refreshFailedLayoutItem(DesignSurface.java:1241)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks$2.run(MXMLDesignView4Controller.java:626)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$6.run(MXMLDesignView4Controller.java:2774)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:07:20.423
+!MESSAGE An exception occurred during Flex layout
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks.flexLayoutErrorOccurred(MXMLDesignView4Controller.java:635)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.adobe.flexide.playerview.DesignCall.invoke(DesignCall.java:96)
+	at com.adobe.flexide.playerview.PlayerListenerHost.notifyDesignCall(PlayerListenerHost.java:173)
+	at com.adobe.flexide.playerview.PlayerListenerHost.callFunction(PlayerListenerHost.java:47)
+	at com.adobe.flexide.embeddedplayer.PlayerNativeCallbacks.CallJavaFunction(PlayerNativeCallbacks.java:48)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:07:20.426
+!MESSAGE Error
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.mxml.editor.design.internal.MXMLDesignView4Controller$DesignViewCallbacks.flexLayoutErrorOccurred(MXMLDesignView4Controller.java:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.adobe.flexide.playerview.DesignCall.invoke(DesignCall.java:96)
+	at com.adobe.flexide.playerview.PlayerListenerHost.notifyDesignCall(PlayerListenerHost.java:173)
+	at com.adobe.flexide.playerview.PlayerListenerHost.callFunction(PlayerListenerHost.java:47)
+	at com.adobe.flexide.embeddedplayer.PlayerNativeCallbacks.CallJavaFunction(PlayerNativeCallbacks.java:48)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.core.resources 4 2 2011-12-01 00:09:02.177
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:799)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.178
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.178
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.178
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.178
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.178
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.179
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.179
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+
+!ENTRY org.eclipse.core.resources 4 75 2011-12-01 00:09:02.400
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.adobe.flexbuilder.project 4 75 2011-12-01 00:09:02.400
+!MESSAGE Errors running builder 'Flex' on project 'sharedLib'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:799)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.401
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.401
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.401
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.401
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.401
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:02.401
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.401
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:02.401
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+
+!ENTRY org.eclipse.core.resources 4 2 2011-12-01 00:09:22.146
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:799)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.147
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.147
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.147
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.147
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.147
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.147
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.147
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+
+!ENTRY org.eclipse.core.resources 4 75 2011-12-01 00:09:22.361
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.adobe.flexbuilder.project 4 75 2011-12-01 00:09:22.361
+!MESSAGE Errors running builder 'Flex' on project 'sharedLib'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:799)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.361
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.361
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.361
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.361
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.361
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2011-12-01 00:09:22.361
+!MESSAGE Could not delete 'C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.deleteIncludingReadOnly(BuilderUtils.java:631)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.clean(FlexIncrementalBuilder.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:631)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:172)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:203)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:258)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:343)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:344)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:306)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:154)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.361
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2011-12-01 00:09:22.361
+!MESSAGE Could not delete: C:\Development\Workspaces\FB45\MultiPlatformDemo\sharedLib\bin\sharedLib.swc.
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 00:20:16.649
+!MESSAGE Breakpoint does not have an associated marker.
+!STACK 1
+org.eclipse.debug.core.DebugException: Breakpoint does not have an associated marker.
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:188)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1054)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$12(FlexDebugTarget.java:1051)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2011-12-01 00:20:16.649
+!MESSAGE Breakpoint does not have an associated marker.
+
+!ENTRY com.adobe.flexide.as.core 4 0 2011-12-01 00:31:49.330
+!MESSAGE Could not disconnect updater
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexide.as.core.ui.outliner.ActionScriptOutlineUpdater.disconnect(ActionScriptOutlineUpdater.java:122)
+	at com.adobe.flexide.mxml.core.ui.outliner.MXMLCoreOutliner$ShowMXMLViewAction.run(MXMLCoreOutliner.java:122)
+	at com.adobe.flexide.editorcore.ui.outliner.AbstractStatefulAction.notifyChecked(AbstractStatefulAction.java:91)
+	at com.adobe.flexide.editorcore.ui.outliner.AbstractStatefulAction.notifyCheckedListeners(AbstractStatefulAction.java:84)
+	at com.adobe.flexide.editorcore.ui.outliner.AbstractStatefulAction.setChecked(AbstractStatefulAction.java:69)
+	at com.adobe.flexide.editorcore.ui.outliner.AbstractStatefulAction.setChecked(AbstractStatefulAction.java:62)
+	at com.adobe.flexide.editorcore.ui.outliner.AbstractStatefulAction.setCheckedStateSetting(AbstractStatefulAction.java:55)
+	at com.adobe.flexide.mxml.core.ui.outliner.MXMLCoreOutliner.createShowMXMLAction(MXMLCoreOutliner.java:284)
+	at com.adobe.flexide.mxml.core.ui.outliner.MXMLCoreOutliner.createControl(MXMLCoreOutliner.java:243)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:137)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:408)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:751)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.partBroughtToTop(ContentOutline.java:212)
+	at org.eclipse.ui.part.PageBookView$4.partBroughtToTop(PageBookView.java:1014)
+	at org.eclipse.ui.internal.PartListenerList2$2.run(PartListenerList2.java:85)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+	at org.eclipse.ui.internal.PartListenerList2.firePartBroughtToTop(PartListenerList2.java:83)
+	at org.eclipse.ui.internal.PartService.firePartBroughtToTop(PartService.java:212)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.firePartBroughtToTop(WorkbenchPagePartList.java:76)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActiveEditorChanged(WorkbenchPagePartList.java:52)
+	at org.eclipse.ui.internal.PartList.setActiveEditor(PartList.java:162)
+	at org.eclipse.ui.internal.WorkbenchPage.makeActiveEditor(WorkbenchPage.java:1281)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3530)
+	at org.eclipse.ui.internal.WorkbenchPage.internalActivate(WorkbenchPage.java:617)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:589)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2875)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2674)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:683)
+	at com.adobe.flexide.editorcore.EditorUtility.openIFileInEditor(EditorUtility.java:446)
+	at com.adobe.flexide.editorcore.EditorUtility.openEditorForFilePath(EditorUtility.java:574)
+	at com.adobe.flexide.editorcore.EditorUtility.openEditorForFilePath(EditorUtility.java:609)
+	at com.adobe.flexide.as.core.lookup.ASDefinition.openInEditor(ASDefinition.java:671)
+	at com.adobe.flexide.as.core.lookup.LookupManager.openDefinitionInEditor(LookupManager.java:145)
+	at com.adobe.flexide.as.core.ui.hyperlink.ActionScriptHyperlink.open(ActionScriptHyperlink.java:67)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseUp(HyperlinkManager.java:419)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:213)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SESSION 2011-12-01 11:54:02.611 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2011-12-01 11:54:07.718
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-12-01 11:54:07.718
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.jface 2 0 2011-12-01 11:54:21.753
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-01 11:54:21.754
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1e81ab3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1e81ab3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-01 11:54:21.754
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,References in Workspace,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1311a3e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1311a3e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SESSION 2011-12-01 20:13:24.686 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Development\Workspaces\FB45\MultiPlatformDemo
+
+!ENTRY org.eclipse.ui 2 0 2011-12-01 20:13:28.212
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-12-01 20:13:28.213
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.jface 2 0 2011-12-01 20:13:36.371
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-01 20:13:36.371
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a96bae)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a96bae)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-01 20:13:36.372
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,References in Workspace,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1b7eb54)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1b7eb54)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 20:46:16.641
+!MESSAGE checkThread failed
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.designmodel.DesignModel.checkThread(DesignModel.java:541)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:261)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:581)
+	at com.adobe.flexbuilder.mxmlmodel.AbstractMXMLModel.changed(AbstractMXMLModel.java:583)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:566)
+	at com.adobe.flexbuilder.mxmlmodel.MXMLItem.changed(MXMLItem.java:307)
+	at com.adobe.flexbuilder.mxmlmodel.MXMLModel.setRootAndNotify(MXMLModel.java:2337)
+	at com.adobe.flexbuilder.mxmlmodel.MXMLModel.refreshFromText(MXMLModel.java:1699)
+	at com.adobe.flexbuilder.designmodel.DesignModel.setTextProvider(DesignModel.java:458)
+	at com.adobe.flexbuilder.mxmlmodel.MXMLModel.setTextProvider(MXMLModel.java:1740)
+	at com.adobe.flexbuilder.designmodel.DesignModelManager.createModelForDocument(DesignModelManager.java:283)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getNonStatefulModel(MXMLDocument.java:484)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getStatefulModel(MXMLDocument.java:499)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getAdapter(MXMLDocument.java:549)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.getModels(MXMLUndoTracker.java:88)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.takeBeginSnapshots(MXMLUndoTracker.java:171)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.historyNotification(MXMLUndoTracker.java:250)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory$2.run(DefaultOperationHistory.java:939)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyListeners(DefaultOperationHistory.java:928)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyAdd(DefaultOperationHistory.java:990)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.replaceOperation(DefaultOperationHistory.java:1226)
+	at org.eclipse.core.commands.operations.TriggeredOperations.remove(TriggeredOperations.java:96)
+	at org.eclipse.core.commands.operations.TriggeredOperations.removeContext(TriggeredOperations.java:128)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.flushRedo(DefaultOperationHistory.java:597)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.add(DefaultOperationHistory.java:195)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:528)
+	at com.adobe.flexbuilder.editors.derived.ui.navigator.FlexResourceDeleteAction$2.run(FlexResourceDeleteAction.java:957)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 20:46:16.643
+!MESSAGE checkThread failed
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.designmodel.DesignModel.checkThread(DesignModel.java:541)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:261)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:581)
+	at com.adobe.flexbuilder.mxmlmodel.AbstractMXMLModel.changed(AbstractMXMLModel.java:583)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:566)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLItem.includeChildAndNotify(SMXMLItem.java:114)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SPropertyHolder.includeChildAndNotify(SPropertyHolder.java:208)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLItem.switchToState(SMXMLItem.java:91)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SPropertyHolder.switchToState(SPropertyHolder.java:201)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SComponentInstance.switchToState(SComponentInstance.java:85)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SComponentInstance.setViewedStateInternal(SComponentInstance.java:76)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.setRootToDefaultState(SMXMLModel.java:194)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.setRootAndPostNotify(SMXMLModel.java:177)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.buildFromBase(SMXMLModel.java:119)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.<init>(SMXMLModel.java:100)
+	at com.adobe.flexbuilder.mxmlmodel.states.StatefulMXMLModelFactory.getStatefulModel(StatefulMXMLModelFactory.java:46)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getStatefulModel(MXMLDocument.java:501)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getAdapter(MXMLDocument.java:549)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.getModels(MXMLUndoTracker.java:88)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.takeBeginSnapshots(MXMLUndoTracker.java:171)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.historyNotification(MXMLUndoTracker.java:250)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory$2.run(DefaultOperationHistory.java:939)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyListeners(DefaultOperationHistory.java:928)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyAdd(DefaultOperationHistory.java:990)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.replaceOperation(DefaultOperationHistory.java:1226)
+	at org.eclipse.core.commands.operations.TriggeredOperations.remove(TriggeredOperations.java:96)
+	at org.eclipse.core.commands.operations.TriggeredOperations.removeContext(TriggeredOperations.java:128)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.flushRedo(DefaultOperationHistory.java:597)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.add(DefaultOperationHistory.java:195)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:528)
+	at com.adobe.flexbuilder.editors.derived.ui.navigator.FlexResourceDeleteAction$2.run(FlexResourceDeleteAction.java:957)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 20:46:16.645
+!MESSAGE checkThread failed
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.designmodel.DesignModel.checkThread(DesignModel.java:541)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:261)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:581)
+	at com.adobe.flexbuilder.mxmlmodel.AbstractMXMLModel.changed(AbstractMXMLModel.java:583)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:566)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLItem.includeChildAndNotify(SMXMLItem.java:114)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SPropertyHolder.includeChildAndNotify(SPropertyHolder.java:208)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLItem.switchToState(SMXMLItem.java:91)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SPropertyHolder.switchToState(SPropertyHolder.java:201)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SComponentInstance.switchToState(SComponentInstance.java:85)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SComponentInstance.setViewedStateInternal(SComponentInstance.java:76)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.setRootToDefaultState(SMXMLModel.java:194)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.setRootAndPostNotify(SMXMLModel.java:177)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.buildFromBase(SMXMLModel.java:119)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.<init>(SMXMLModel.java:100)
+	at com.adobe.flexbuilder.mxmlmodel.states.StatefulMXMLModelFactory.getStatefulModel(StatefulMXMLModelFactory.java:46)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getStatefulModel(MXMLDocument.java:501)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getAdapter(MXMLDocument.java:549)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.getModels(MXMLUndoTracker.java:88)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.takeBeginSnapshots(MXMLUndoTracker.java:171)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.historyNotification(MXMLUndoTracker.java:250)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory$2.run(DefaultOperationHistory.java:939)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyListeners(DefaultOperationHistory.java:928)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyAdd(DefaultOperationHistory.java:990)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.replaceOperation(DefaultOperationHistory.java:1226)
+	at org.eclipse.core.commands.operations.TriggeredOperations.remove(TriggeredOperations.java:96)
+	at org.eclipse.core.commands.operations.TriggeredOperations.removeContext(TriggeredOperations.java:128)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.flushRedo(DefaultOperationHistory.java:597)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.add(DefaultOperationHistory.java:195)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:528)
+	at com.adobe.flexbuilder.editors.derived.ui.navigator.FlexResourceDeleteAction$2.run(FlexResourceDeleteAction.java:957)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-01 20:46:16.646
+!MESSAGE checkThread failed
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1010)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexbuilder.designmodel.DesignModel.checkThread(DesignModel.java:541)
+	at com.adobe.flexbuilder.designmodel.DesignModel.notifyChanged(DesignModel.java:261)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:581)
+	at com.adobe.flexbuilder.mxmlmodel.AbstractMXMLModel.changed(AbstractMXMLModel.java:583)
+	at com.adobe.flexbuilder.designmodel.DesignModel.changed(DesignModel.java:566)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.setRootAndPostNotify(SMXMLModel.java:183)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.buildFromBase(SMXMLModel.java:119)
+	at com.adobe.flexbuilder.mxmlmodel.inlinestates.internal.SMXMLModel.<init>(SMXMLModel.java:100)
+	at com.adobe.flexbuilder.mxmlmodel.states.StatefulMXMLModelFactory.getStatefulModel(StatefulMXMLModelFactory.java:46)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getStatefulModel(MXMLDocument.java:501)
+	at com.adobe.flexide.mxml.core.document.MXMLDocument.getAdapter(MXMLDocument.java:549)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.getModels(MXMLUndoTracker.java:88)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.takeBeginSnapshots(MXMLUndoTracker.java:171)
+	at com.adobe.flexide.mxml.core.MXMLUndoTracker.historyNotification(MXMLUndoTracker.java:250)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory$2.run(DefaultOperationHistory.java:939)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyListeners(DefaultOperationHistory.java:928)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.notifyAdd(DefaultOperationHistory.java:990)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.replaceOperation(DefaultOperationHistory.java:1226)
+	at org.eclipse.core.commands.operations.TriggeredOperations.remove(TriggeredOperations.java:96)
+	at org.eclipse.core.commands.operations.TriggeredOperations.removeContext(TriggeredOperations.java:128)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.flushRedo(DefaultOperationHistory.java:597)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.add(DefaultOperationHistory.java:195)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:528)
+	at com.adobe.flexbuilder.editors.derived.ui.navigator.FlexResourceDeleteAction$2.run(FlexResourceDeleteAction.java:957)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2011-12-02 11:43:28.567 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Development\Workspaces\FB45\MultiPlatformDemo
+
+!ENTRY org.eclipse.ui 2 0 2011-12-02 11:43:32.174
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-12-02 11:43:32.174
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2011-12-02 11:43:44.991
+!MESSAGE Product = null version = 460 edition = prem
+
+!ENTRY org.eclipse.jface 2 0 2011-12-02 15:33:12.877
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-02 15:33:12.877
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@14395fb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@14395fb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-02 15:33:12.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@2bb129)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@2bb129)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,References in Workspace,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.adobe.flexbuilder.debug 4 0 2011-12-02 17:15:10.105
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.adobe.flexbuilder.debug.FlexDebugPlugin.stop() of bundle com.adobe.flexbuilder.debug.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1160)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:690)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:597)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: java.lang.NullPointerException
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.waitFor(FlexDebugTarget.java:1374)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.shutdown(FlexDebugTarget.java:1490)
+	at com.adobe.flexbuilder.debug.FlexDebugPlugin.stop(FlexDebugPlugin.java:111)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 18 more
+Root exception:
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.waitFor(FlexDebugTarget.java:1374)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.shutdown(FlexDebugTarget.java:1490)
+	at com.adobe.flexbuilder.debug.FlexDebugPlugin.stop(FlexDebugPlugin.java:111)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1160)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:690)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:597)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+!SESSION 2011-12-02 17:16:06.998 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2011-12-02 17:16:10.468
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-12-02 17:16:10.468
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2011-12-02 17:16:19.555
+!MESSAGE Product = null version = 460 edition = prem
+
+!ENTRY org.eclipse.osgi 2 0 2011-12-02 17:16:26.157
+!MESSAGE While loading class "org.eclipse.team.internal.ccvs.core.util.SyncFileChangeListener$1", thread "Thread[main,6,main]" timed out waiting (5004ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.team.cvs.core_3.3.400.I20110510-0800 [383]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "org.eclipse.team.internal.ccvs.core.util.SyncFileChangeListener$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.team.cvs.core_3.3.400.I20110510-0800.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.team.internal.ccvs.core.util.SyncFileChangeListener.resourceChanged(SyncFileChangeListener.java:94)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.run(FlexBreakpoint.java:157)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.resetTransientMarkerAttributes(FlexLineBreakpoint.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.setMarker(FlexLineBreakpoint.java:216)
+	at org.eclipse.debug.internal.core.BreakpointManager.createBreakpoint(BreakpointManager.java:530)
+	at org.eclipse.debug.internal.core.BreakpointManager.loadBreakpoints(BreakpointManager.java:264)
+	at org.eclipse.debug.internal.core.BreakpointManager.initializeBreakpoints(BreakpointManager.java:431)
+	at org.eclipse.debug.internal.core.BreakpointManager.getBreakpoints0(BreakpointManager.java:400)
+	at org.eclipse.debug.internal.core.BreakpointManager.hasBreakpoints(BreakpointManager.java:908)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.isEnabled(RemoveAllBreakpointsAction.java:55)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.update(AbstractRemoveAllActionDelegate.java:100)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.init(AbstractRemoveAllActionDelegate.java:86)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.init(RemoveAllBreakpointsAction.java:150)
+	at org.eclipse.ui.internal.WWinPluginAction.initDelegate(WWinPluginAction.java:189)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:125)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:165)
+	at org.eclipse.ui.plugin.AbstractUIPlugin$1.run(AbstractUIPlugin.java:486)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 63 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.team.internal.ccvs.core.util.SyncFileChangeListener.resourceChanged(SyncFileChangeListener.java:94)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.run(FlexBreakpoint.java:157)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.resetTransientMarkerAttributes(FlexLineBreakpoint.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.setMarker(FlexLineBreakpoint.java:216)
+	at org.eclipse.debug.internal.core.BreakpointManager.createBreakpoint(BreakpointManager.java:530)
+	at org.eclipse.debug.internal.core.BreakpointManager.loadBreakpoints(BreakpointManager.java:264)
+	at org.eclipse.debug.internal.core.BreakpointManager.initializeBreakpoints(BreakpointManager.java:431)
+	at org.eclipse.debug.internal.core.BreakpointManager.getBreakpoints0(BreakpointManager.java:400)
+	at org.eclipse.debug.internal.core.BreakpointManager.hasBreakpoints(BreakpointManager.java:908)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.isEnabled(RemoveAllBreakpointsAction.java:55)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.update(AbstractRemoveAllActionDelegate.java:100)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.init(AbstractRemoveAllActionDelegate.java:86)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.init(RemoveAllBreakpointsAction.java:150)
+	at org.eclipse.ui.internal.WWinPluginAction.initDelegate(WWinPluginAction.java:189)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:125)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:165)
+	at org.eclipse.ui.plugin.AbstractUIPlugin$1.run(AbstractUIPlugin.java:486)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.osgi 2 0 2011-12-02 17:16:31.163
+!MESSAGE While loading class "org.eclipse.team.internal.ccvs.core.resources.FileModificationManager$1", thread "Thread[main,6,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.team.cvs.core_3.3.400.I20110510-0800 [383]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "org.eclipse.team.internal.ccvs.core.resources.FileModificationManager$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.team.cvs.core_3.3.400.I20110510-0800.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.team.internal.ccvs.core.resources.FileModificationManager.resourceChanged(FileModificationManager.java:52)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.run(FlexBreakpoint.java:157)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.resetTransientMarkerAttributes(FlexLineBreakpoint.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.setMarker(FlexLineBreakpoint.java:216)
+	at org.eclipse.debug.internal.core.BreakpointManager.createBreakpoint(BreakpointManager.java:530)
+	at org.eclipse.debug.internal.core.BreakpointManager.loadBreakpoints(BreakpointManager.java:264)
+	at org.eclipse.debug.internal.core.BreakpointManager.initializeBreakpoints(BreakpointManager.java:431)
+	at org.eclipse.debug.internal.core.BreakpointManager.getBreakpoints0(BreakpointManager.java:400)
+	at org.eclipse.debug.internal.core.BreakpointManager.hasBreakpoints(BreakpointManager.java:908)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.isEnabled(RemoveAllBreakpointsAction.java:55)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.update(AbstractRemoveAllActionDelegate.java:100)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.init(AbstractRemoveAllActionDelegate.java:86)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.init(RemoveAllBreakpointsAction.java:150)
+	at org.eclipse.ui.internal.WWinPluginAction.initDelegate(WWinPluginAction.java:189)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:125)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:165)
+	at org.eclipse.ui.plugin.AbstractUIPlugin$1.run(AbstractUIPlugin.java:486)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 63 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.team.internal.ccvs.core.resources.FileModificationManager.resourceChanged(FileModificationManager.java:52)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.run(FlexBreakpoint.java:157)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.resetTransientMarkerAttributes(FlexLineBreakpoint.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.setMarker(FlexLineBreakpoint.java:216)
+	at org.eclipse.debug.internal.core.BreakpointManager.createBreakpoint(BreakpointManager.java:530)
+	at org.eclipse.debug.internal.core.BreakpointManager.loadBreakpoints(BreakpointManager.java:264)
+	at org.eclipse.debug.internal.core.BreakpointManager.initializeBreakpoints(BreakpointManager.java:431)
+	at org.eclipse.debug.internal.core.BreakpointManager.getBreakpoints0(BreakpointManager.java:400)
+	at org.eclipse.debug.internal.core.BreakpointManager.hasBreakpoints(BreakpointManager.java:908)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.isEnabled(RemoveAllBreakpointsAction.java:55)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.update(AbstractRemoveAllActionDelegate.java:100)
+	at org.eclipse.debug.internal.ui.actions.AbstractRemoveAllActionDelegate.init(AbstractRemoveAllActionDelegate.java:86)
+	at org.eclipse.debug.internal.ui.actions.breakpoints.RemoveAllBreakpointsAction.init(RemoveAllBreakpointsAction.java:150)
+	at org.eclipse.ui.internal.WWinPluginAction.initDelegate(WWinPluginAction.java:189)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:125)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:165)
+	at org.eclipse.ui.plugin.AbstractUIPlugin$1.run(AbstractUIPlugin.java:486)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.jface 2 0 2011-12-02 17:16:42.886
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-02 17:16:42.886
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1fa6e43)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,Find All Declarations In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1fa6e43)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-12-02 17:16:42.886
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@5d21ef)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,Find All References In Workspace,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,Navigation,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@5d21ef)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,References in Workspace,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 271 2011-12-02 17:23:24.648
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2011-12-02 17:23:24.648
+!MESSAGE The project description file (.project) for 'Android' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-02 17:23:24.649
+!MESSAGE Error writing persistence file L/Android/.actionScriptProperties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not write file: C:\Development\Git\Flex-Multiscreen-Demo\Android.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:50)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.checkTargetIsNotWritable(LocalFile.java:84)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:289)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1099)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:321)
+	at org.eclipse.core.internal.resources.File.create(File.java:154)
+	at org.eclipse.core.internal.resources.File.create(File.java:187)
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.writePersistenceFile(PersistableSettings.java:205)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings$8.run(ActionScriptProjectSettings.java:1342)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.saveDescription(ActionScriptProjectSettings.java:1370)
+	at com.adobe.flexbuilder.project.internal.FlexProjectSettings.saveDescription(FlexProjectSettings.java:239)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.setProjectDescription(ActionScriptProject.java:1325)
+	at com.adobe.flexbuilder.project.internal.ApplicationResourceListener$2.run(ApplicationResourceListener.java:204)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2011-12-02 17:23:24.650
+!MESSAGE Could not write file: C:\Development\Git\Flex-Multiscreen-Demo\Android.
+
+!ENTRY org.eclipse.core.jobs 4 2 2011-12-02 17:23:24.653
+!MESSAGE An internal error occurred during: "Updating applications...".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error writing persistence file L/Android/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.writePersistenceFile(PersistableSettings.java:210)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings$8.run(ActionScriptProjectSettings.java:1342)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.adobe.flexbuilder.project.FlexWorkspaceRunner.run(FlexWorkspaceRunner.java:61)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.saveDescription(ActionScriptProjectSettings.java:1370)
+	at com.adobe.flexbuilder.project.internal.FlexProjectSettings.saveDescription(FlexProjectSettings.java:239)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.setProjectDescription(ActionScriptProject.java:1325)
+	at com.adobe.flexbuilder.project.internal.ApplicationResourceListener$2.run(ApplicationResourceListener.java:204)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Could not write file: C:\Development\Git\Flex-Multiscreen-Demo\Android.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:50)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.checkTargetIsNotWritable(LocalFile.java:84)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:289)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1099)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:321)
+	at org.eclipse.core.internal.resources.File.create(File.java:154)
+	at org.eclipse.core.internal.resources.File.create(File.java:187)
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.writePersistenceFile(PersistableSettings.java:205)
+	... 8 more
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2011-12-02 17:23:24.991
+!MESSAGE Avoiding non-existent source container src while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:425)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

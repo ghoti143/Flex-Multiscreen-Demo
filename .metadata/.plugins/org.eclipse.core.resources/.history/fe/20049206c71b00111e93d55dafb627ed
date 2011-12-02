@@ -1,0 +1,21 @@
+package mil.anc.map.domain
+{
+	[Bindable]
+	public class Parcel
+	{		
+		public var id:String;
+		public var label:String;
+		public var url:String;
+		public var icon:Class;
+		public var iconName:String;
+		
+		public function Parcel(id:String=null, label:String=null, url:String=null, icon:Class=null, iconName:String=null)
+		{
+			this.id = id;
+			this.label = label;
+			this.url = url;
+			this.icon = icon;
+			this.iconName = iconName;
+		}
+	}
+}

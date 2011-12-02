@@ -1,0 +1,12 @@
+package com.gisinc.showcase.multiscreen.model
+{
+	[Bindable]
+	public class ApplicationModel
+	{
+		public var screenType:String;
+		
+		public function ApplicationModel()
+		{
+		}
+	}
+}

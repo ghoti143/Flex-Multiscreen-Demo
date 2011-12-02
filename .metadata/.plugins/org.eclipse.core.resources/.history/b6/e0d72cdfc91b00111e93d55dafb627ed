@@ -1,0 +1,56 @@
+package com.gisinc.showcase.multiscreen.controller
+{
+	import com.esri.ags.FeatureSet;
+	import com.esri.ags.geometry.MapPoint;
+	import com.esri.ags.layers.FeatureLayer;
+	import com.esri.ags.tasks.supportClasses.Query;
+	import com.gisinc.showcase.multiscreen.model.MapModel;
+	
+	import flash.events.IEventDispatcher;
+	
+	import mx.rpc.AsyncToken;
+	import mx.rpc.events.FaultEvent;
+	import mx.rpc.events.ResultEvent;
+	
+	import org.swizframework.utils.services.ServiceHelper;
+
+	public class MapController 
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;
+		
+		[Inject]
+		public var sh:ServiceHelper;
+		
+		[Inject]
+		public var mapModel:MapModel;
+		
+		public function MapController()
+		{
+		}
+		
+		[EventHandler("MappingEvent.MAP_CLICK", properties="mapPoint")]
+		public function handleMapClick(mapPoint:MapPoint):void
+		{
+			var fl:FeatureLayer = new FeatureLayer("http://localgovtemplates2.esri.com/ArcGIS/rest/services/Bloomfield/TaxParcelQuery/MapServer/0");
+			var query:Query = new Query();
+			query.geometry = mapPoint;
+			query.returnGeometry = false;
+			query.outFields = ["*"];
+			
+			var call:AsyncToken = fl.queryFeatures(query);
+			sh.executeServiceCall(call, queryParcelsResultHandler, queryParcelsFaultHandler);
+			
+		}
+		
+		private function queryParcelsResultHandler(fs:FeatureSet):void
+		{
+			trace(fs);
+		}
+		
+		private function queryParcelsFaultHandler(event:FaultEvent):void
+		{
+			// do nothing
+		}
+	}
+}

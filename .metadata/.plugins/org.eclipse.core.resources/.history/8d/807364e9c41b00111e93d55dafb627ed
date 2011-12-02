@@ -1,0 +1,76 @@
+package mil.anc.map.presentation
+{
+	import com.esri.ags.Map;
+	import com.esri.ags.geometry.Extent;
+	
+	import flash.events.IEventDispatcher;
+	import flash.events.MouseEvent;
+	
+	import mil.anc.map.domain.LayerData;
+	import mil.anc.map.event.ApplicationEvent;
+	import mil.anc.map.event.MappingEvent;
+	import mil.anc.map.model.AssetModel;
+	
+	import mx.collections.ArrayCollection;
+	import mx.events.FlexEvent;
+	
+	import spark.events.IndexChangeEvent;
+
+	public class MapPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		[Bindable][Inject]
+		public var assetModel:AssetModel;
+		
+		[Bindable][Inject("applicationModel.isKiosk")]
+		public var isKiosk:Boolean;
+				
+		[Bindable][Inject("mapModel.extent", bind="true", twoWay="true")]
+		public var extent:Extent;
+		
+		[Bindable][Inject("mapModel.layers", bind="true")]
+		public var layers:ArrayCollection;
+		
+		[Bindable][Inject("mapModel.printLayers", bind="true")]
+		public var printLayers:ArrayCollection;
+		
+		[Bindable][Inject("mapModel.basemaps", bind="true")]
+		public var basemaps:ArrayCollection;
+		
+		[Bindable]
+		public var logosClickable:Boolean;
+		
+		public function MapPM()
+		{			
+		}
+		
+		[PostConstruct]
+		public function init():void
+		{
+			logosClickable = !isKiosk;
+		}
+		
+		public function registerMap(map:Map):void
+		{
+			var e:MappingEvent = new MappingEvent(MappingEvent.REGISTER_MAP_OBJECT);
+			e.map = map;
+			dispatcher.dispatchEvent(e);
+		}
+		
+		public function handleBasemapChange(event:IndexChangeEvent):void
+		{
+			dispatcher.dispatchEvent(new MappingEvent(MappingEvent.CHANGE_BASEMAP, basemaps.getItemAt(event.newIndex) as LayerData));
+		}
+		
+		public function navigateTo(url:String):void
+		{
+			// we don't want to launch any popup windows in the kiosk app
+			if(logosClickable)
+			{
+				dispatcher.dispatchEvent(new ApplicationEvent(ApplicationEvent.NAVIGATE_TO_URL, url));
+			}
+		}
+	}	
+}

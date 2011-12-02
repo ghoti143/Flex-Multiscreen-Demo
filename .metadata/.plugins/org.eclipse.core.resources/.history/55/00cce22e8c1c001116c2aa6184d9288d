@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			[Bindable]
+			public var data:Object
+		]]>
+	</fx:Script>
+	
+	<s:Label text="Low Parcel Identification Number: {data.LOWPARCELID}" />
+	<s:Label text="Parcel Identification Number: {data.PARCELID}" />
+	<s:Label text="Building: {data.BUILDING}" />
+	<s:Label text="Unit: {data.UNIT}" />
+	<s:Label text="Tax District Code: {data.CVTTXCD}" />
+	<s:Label text="Owner: {data.OWNERNME1}" />
+	<s:Label text="Address: {data.PSTLADDRESS}" />
+	<s:Label text="City: {data.PSTLCITY}" />
+	<s:Label text="State: {data.PSTLSTATE}" />
+	<s:Label text="Zip: {data.PSTLZIP5}" />
+	
+	LOWPARCELID (Type: esriFieldTypeString, Alias: Low Parcel Identification Number, Length: 30 )
+	PARCELID (Type: esriFieldTypeString, Alias: Parcel Identification Number, Length: 30 )
+	BUILDING (Type: esriFieldTypeString, Alias: Building, Length: 50 )
+	UNIT (Type: esriFieldTypeString, Alias: Unit, Length: 50 )
+	CVTTXCD (Type: esriFieldTypeString, Alias: Tax District Code, Length: 4 )
+	CVTTXDSCRP (Type: esriFieldTypeString, Alias: Tax District Name, Length: 100 )
+	SCHLTXCD (Type: esriFieldTypeString, Alias: School District Code, Length: 4 )
+	SCHLDSCRP (Type: esriFieldTypeString, Alias: School District Name, Length: 100 )
+	USECD (Type: esriFieldTypeString, Alias: Use Code, Length: 4 )
+	USEDSCRP (Type: esriFieldTypeString, Alias: Use Description, Length: 100 )
+	NGHBRHDCD (Type: esriFieldTypeString, Alias: Neighborhood Code, Length: 10 )
+	
+</s:VGroup>

@@ -1,0 +1,16 @@
+package com.gisinc.showcase.multiscreen.model
+{
+	import com.esri.ags.Graphic;
+	import com.esri.ags.geometry.Extent;
+
+	[Bindable]
+	public class MapModel
+	{
+		public var currentParcel:Graphic;
+		public var extent:Extent;
+		
+		public function MapModel()
+		{
+		}
+	}
+}

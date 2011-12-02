@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+							xmlns:s="library://ns.adobe.com/flex/spark" 
+							xmlns:swiz="http://swiz.swizframework.org"
+							xmlns:bean="com.gisinc.showcase.multiscreen.bean.*"
+							xmlns:local="*"
+							firstView="views.MapView" applicationComplete="pm.handleApplicationComplete(event)">
+	<fx:Script>
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.MobileApplicationPM;
+			
+			import mx.events.FlexEvent;
+			
+			[Inject]
+			public var pm:MobileApplicationPM;
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>		
+		<swiz:Swiz id="swiz">
+			
+			<swiz:beanProviders>
+				<bean:Beans screenType="mobile" />
+				<local:Beans />
+			</swiz:beanProviders>
+			
+			<swiz:config>
+				<swiz:SwizConfig
+					viewPackages="com.gisinc.showcase.multiscreen.view.*, views.*"
+					eventPackages="com.gisinc.showcase.multiscreen.event.*"/>
+			</swiz:config>
+			
+		</swiz:Swiz>		
+	</fx:Declarations>
+
+</s:ViewNavigatorApplication>

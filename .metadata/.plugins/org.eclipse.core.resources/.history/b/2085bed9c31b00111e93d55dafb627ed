@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:model="com.gisinc.showcase.multiscreen.model.*"
+	xmlns:controller="com.gisinc.showcase.multiscreen.controller.*">
+	<fx:Script>
+		<![CDATA[
+			
+		]]>
+	</fx:Script>
+	
+	<!-- DELEGATES -->
+	<swiz:Prototype type="{ANCServiceDelegate}" singleton="true" />
+	<swiz:Prototype type="{MapServiceDelegate}" singleton="true" />
+	<swiz:Prototype type="{ISSServiceDelegate}" singleton="true" />
+	<swiz:Prototype type="{GraveServiceDelegate}" singleton="true" />
+	<swiz:Prototype type="{RouteServiceDelegate}" singleton="true" />
+	<swiz:Prototype type="{GeometryServiceDelegate}" singleton="true" />
+	
+	<!-- CONTROLLER -->
+	<controller:ApplicationController />
+	<controller:BrowsemapController />
+	<controller:FeedbackController />
+	<controller:MapController />
+	<controller:PrintController />
+	<controller:RouteController />
+	<controller:SearchController />
+	<controller:SidePanelController />
+	
+	<!-- MODEL -->
+	<model:AssetModel id="assetModel" />
+	<model:ApplicationModel id="applicationModel" config="{config}" />
+	<model:BrowsemapModel id="browsemapModel" />
+	<model:MapModel id="mapModel" />
+	<model:ModalWindowModel id="modalWindowModel" />
+	<model:RouteModel id="routeModel" />
+	<model:SearchModel id="searchModel" />
+	<model:SidePanelModel id="sidePanelModel" />
+	
+	<!-- PRESENTATION MODELS -->
+	<swiz:Prototype type="{ApplicationPM}" singleton="true" />
+	<swiz:Prototype type="{AttributeSearchFormPM}" singleton="true" />
+	<swiz:Prototype type="{BrowsePM}" singleton="true" />
+	<swiz:Prototype type="{BrowsemapInfoSymbolPM}" singleton="true" />
+	<swiz:Prototype type="{BrowsemapDetailPM}" singleton="true" />
+	<swiz:Prototype type="{DirectionsPM}" singleton="true" />
+	<swiz:Prototype type="{FeedbackFormPM}" singleton="true" />
+	<swiz:Prototype type="{HeaderPM}" singleton="true" />
+	<swiz:Prototype type="{HomePM}" singleton="true" />
+	<swiz:Prototype type="{IntermentInfoSymbolPM}" singleton="true" />
+	<swiz:Prototype type="{IntermentDetailPM}" singleton="true" />
+	<swiz:Prototype type="{MainPM}" singleton="true" />
+	<swiz:Prototype type="{MapPM}" singleton="true" />
+	<swiz:Prototype type="{ModalWindowPM}" singleton="true" />
+	<swiz:Prototype type="{BrowsemapResultsPM}" singleton="true" />
+	<swiz:Prototype type="{SearchTypePM}" singleton="true" />
+	<swiz:Prototype type="{SearchResultsPM}" singleton="true" />
+	<swiz:Prototype type="{SidePanelPM}" singleton="true" />
+	<swiz:Prototype type="{SpatialSearchFormPM}" singleton="true" />
+	
+</swiz:BeanProvider>

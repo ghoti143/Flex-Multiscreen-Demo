@@ -1,0 +1,36 @@
+package com.gisinc.showcase.multiscreen.mobile.pm
+{
+	import com.esri.ags.Graphic;
+	import com.gisinc.showcase.multiscreen.mobile.view.ParcelDetailsView;
+	
+	import flash.events.IEventDispatcher;
+	
+	import mx.events.FlexEvent;
+	
+	import spark.components.ViewNavigator;
+	import spark.components.ViewNavigatorApplication;
+
+	public class MobileApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		private var navigator:ViewNavigator;
+		
+		public function MobileApplicationPM()
+		{			
+		}
+		
+		public function handleApplicationComplete(event:FlexEvent):void
+		{
+			var app:ViewNavigatorApplication = event.currentTarget as ViewNavigatorApplication;
+			navigator = app.navigator;	
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="parcel")]
+		public function handleShowDetails(parcel:Graphic):void
+		{
+			navigator.pushView(ParcelDetailsView, parcel.attributes);
+		}
+	}	
+}

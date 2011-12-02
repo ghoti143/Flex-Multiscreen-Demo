@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:model="com.gisinc.showcase.multiscreen.model.*"
+	xmlns:controller="com.gisinc.showcase.multiscreen.controller.*">
+	<fx:Script>
+		<![CDATA[
+			import com.gisinc.showcase.multiscreen.pm.MapPM;
+			
+		]]>
+	</fx:Script>
+	
+	<swiz:Prototype type="{MapPM}" singleton="true" />
+	
+</swiz:BeanProvider>

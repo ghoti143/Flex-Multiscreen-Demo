@@ -1,0 +1,7 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	public interface IApplicationPM
+	{
+		
+	}
+}

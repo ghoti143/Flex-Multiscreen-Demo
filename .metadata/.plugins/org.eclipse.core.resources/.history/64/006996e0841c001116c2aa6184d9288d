@@ -1,0 +1,13 @@
+package com.gisinc.showcase.multiscreen.pm
+{
+	import flash.events.IEventDispatcher;
+	public class MobileApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		public function MobileApplicationPM()
+		{			
+		}
+	}	
+}

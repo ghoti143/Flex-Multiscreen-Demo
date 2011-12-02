@@ -1,0 +1,24 @@
+package com.gisinc.showcase.multiscreen.desktop.pm
+{
+	public class DesktopApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		public function DesktopApplicationPM()
+		{			
+		}
+		
+		public function handleApplicationComplete(event:FlexEvent):void
+		{
+			var app:ViewNavigatorApplication = event.currentTarget as ViewNavigatorApplication;
+			navigator = app.navigator;	
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="parcel")]
+		public function handleShowDetails(parcel:Graphic):void
+		{
+			navigator.pushView(ParcelDetailsView, parcel.attributes);
+		}
+	}	
+}

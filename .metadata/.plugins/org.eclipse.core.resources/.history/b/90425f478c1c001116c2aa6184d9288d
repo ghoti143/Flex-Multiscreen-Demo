@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			[Bindable]
+			public var data:Object
+		]]>
+	</fx:Script>
+	
+	<s:Label text="Low Parcel Identification Number: {data.LOWPARCELID}" />
+	<s:Label text="Parcel Identification Number: {data.PARCELID}" />
+	<s:Label text="Building: {data.BUILDING}" />
+	<s:Label text="Unit: {data.UNIT}" />
+	<s:Label text="Tax District Code: {data.CVTTXCD}" />
+	<s:Label text="Owner: {data.OWNERNME1}" />
+	<s:Label text="Address: {data.PSTLADDRESS}" />
+	<s:Label text="City: {data.PSTLCITY}" />
+	<s:Label text="State: {data.PSTLSTATE}" />
+	<s:Label text="Zip: {data.PSTLZIP5}" />
+	
+</s:VGroup>

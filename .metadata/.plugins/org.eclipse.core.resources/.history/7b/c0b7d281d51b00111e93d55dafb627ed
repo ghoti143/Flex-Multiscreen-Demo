@@ -1,0 +1,23 @@
+package com.gisinc.showcase.multiscreen.event
+{
+	import com.esri.ags.geometry.MapPoint;
+	
+	import flash.events.Event;
+	
+	public class MappingEvent extends Event
+	{
+		public static const MAP_CLICK:String = "mapClick";
+		public static const PARCEL_DETAILS_LOADED:String = "parcelDetailsLoaded";
+		
+		public var mapPoint:MapPoint;
+		public var attributes:Object;
+		
+		public function MappingEvent(type:String, mapPoint:MapPoint=null, attributes:Object=null)
+		{
+			super(type, true);
+			
+			this.mapPoint = mapPoint;
+			this.attributes = attributes;
+		}		
+	}
+}

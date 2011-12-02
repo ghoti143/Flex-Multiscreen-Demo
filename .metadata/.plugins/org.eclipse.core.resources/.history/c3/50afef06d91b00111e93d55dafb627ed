@@ -1,0 +1,59 @@
+package mil.anc.map.presentation
+{
+	import flash.events.IEventDispatcher;
+	import flash.events.MouseEvent;
+	
+	import mil.anc.map.domain.BrowsemapRecord;
+	import mil.anc.map.event.BrowsemapEvent;
+	import mil.anc.map.event.MappingEvent;
+	import mil.anc.map.event.ModalWindowEvent;
+	import mil.anc.map.event.RoutingEvent;
+	import mil.anc.map.model.AssetModel;
+	
+	import mx.utils.object_proxy;
+
+	public class ParcelInfoSymbolPM
+	{
+		public static const WEB_STATE:String = "web";
+		public static const KIOSK_STATE:String = "kiosk";
+		
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+		
+		[Bindable]
+		public var currentState:String;
+		
+		[Bindable][Inject("applicationModel.screenType")]
+		public var screenType:Boolean;
+		
+		[Bindable][Inject]
+		public var assetModel:AssetModel;
+		
+		function BrowsemapInfoSymbolPM()
+		{
+		}
+		
+		[PostConstruct]
+		public function init():void
+		{
+			currentState = isKiosk ? KIOSK_STATE : WEB_STATE;
+		}
+		
+		public function handleDirectionsButtonClick(objectID:int):void
+		{
+			var e:RoutingEvent = new RoutingEvent(RoutingEvent.ROUTE_REQUESTED);
+			e.objectID = objectID;
+			dispatcher.dispatchEvent(e);
+		}
+		
+		public function handleMoreInfoButtonClick(data:Object):void
+		{
+			dispatcher.dispatchEvent(new BrowsemapEvent(BrowsemapEvent.MORE_INFO_REQUESTED, data as BrowsemapRecord));
+		}
+		
+		public function handleCloseButtonClick(event:MouseEvent):void
+		{
+			dispatcher.dispatchEvent(new MappingEvent(MappingEvent.HIDE_INFO_WINDOW));	
+		}
+	}
+}

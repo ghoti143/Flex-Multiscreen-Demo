@@ -1,0 +1,145 @@
+package com.gisinc.showcase.multiscreen.controller
+{
+	import com.esri.ags.FeatureSet;
+	import com.esri.ags.Graphic;
+	import com.esri.ags.Map;
+	import com.esri.ags.events.MapMouseEvent;
+	import com.esri.ags.geometry.Extent;
+	import com.esri.ags.geometry.MapPoint;
+	import com.esri.ags.layers.ArcGISDynamicMapServiceLayer;
+	import com.esri.ags.layers.ArcGISTiledMapServiceLayer;
+	import com.esri.ags.layers.FeatureLayer;
+	import com.esri.ags.layers.GraphicsLayer;
+	import com.esri.ags.symbols.InfoSymbol;
+	import com.esri.ags.tasks.QueryTask;
+	import com.esri.ags.tasks.supportClasses.Query;
+	import com.gisinc.showcase.multiscreen.event.ApplicationEvent;
+	import com.gisinc.showcase.multiscreen.event.MappingEvent;
+	import com.gisinc.showcase.multiscreen.model.ApplicationModel;
+	import com.gisinc.showcase.multiscreen.model.MapModel;
+	import com.gisinc.showcase.multiscreen.view.renderer.ParcelInfoSymbolRenderer;
+	
+	import flash.events.IEventDispatcher;
+	import flash.ui.Mouse;
+	
+	import mx.collections.ArrayCollection;
+	import mx.core.ClassFactory;
+	import mx.managers.CursorManager;
+	import mx.rpc.AsyncToken;
+	import mx.rpc.events.FaultEvent;
+	import mx.rpc.events.ResultEvent;
+	
+	import org.swizframework.utils.services.ServiceHelper;
+
+	public class MapController 
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;
+		
+		[Inject]
+		public var sh:ServiceHelper;
+		
+		[Inject]
+		public var mapModel:MapModel;
+		
+		[Inject]
+		public var applicationModel:ApplicationModel;
+		
+		[Embed(source='assets/images/marker_red.png')]
+		public var marker_red:Class;
+		
+		private var selectCursorId:int;
+		
+		[PostConstruct]
+		public function init():void
+		{
+			mapModel.extent = new Extent(-9276552, 5239734, -9261711, 5255311);
+			
+			var basemap:ArcGISTiledMapServiceLayer = new ArcGISTiledMapServiceLayer("http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer");
+			var parcels:ArcGISDynamicMapServiceLayer = new ArcGISDynamicMapServiceLayer("http://localgovtemplates2.esri.com/ArcGIS/rest/services/Bloomfield/TaxParcelQuery/MapServer");
+			
+			mapModel.layers = new ArrayCollection([basemap, parcels]);
+			
+			if(applicationModel.screenType != ApplicationModel.MOBILE_SCREEN_TYPE)
+			{
+				mapModel.infoSymbolLayer = new GraphicsLayer();
+				mapModel.layers.addItem(mapModel.infoSymbolLayer);
+			}
+		}
+		
+		[EventHandler("MappingEvent.REGISTER_MAP_OBJECT", properties="map")]
+		public function handleRegisterMapObject(map:Map):void
+		{
+			mapModel.map = map;
+		}
+		
+		[EventHandler("MappingEvent.ENABLE_IDENTIFY")]
+		public function handleEnableIdentify():void
+		{
+			mapModel.map.addEventListener(MapMouseEvent.MAP_CLICK, handleMapClick);
+			mapModel.map.panEnabled = false;
+			selectCursorId = CursorManager.setCursor(marker_red, 2, -9, -32);
+		}
+		
+		[EventHandler("MappingEvent.MAP_CLICK", properties="mapPoint")]
+		public function handleMapClick(event:MapMouseEvent):void
+		{
+			removeCursorAndClickListener();
+			
+			var mapPoint:MapPoint = event.mapPoint;
+			
+			var qt:QueryTask = new QueryTask("http://localgovtemplates2.esri.com/ArcGIS/rest/services/Bloomfield/TaxParcelQuery/MapServer/0");
+			qt.showBusyCursor = true;
+			
+			var query:Query = new Query();
+			query.geometry = mapPoint;
+			query.returnGeometry = false;
+			query.outFields = ["*"];
+			
+			var call:AsyncToken = qt.execute(query);
+			sh.executeServiceCall(call, queryParcelsResultHandler, queryParcelsFaultHandler);		
+		}
+		
+		private function removeCursorAndClickListener():void
+		{
+			mapModel.map.removeEventListener(MapMouseEvent.MAP_CLICK, handleMapClick);
+			CursorManager.removeCursor(selectCursorId);
+			mapModel.map.panEnabled = true;
+		}
+		
+		private function queryParcelsResultHandler(fs:FeatureSet):void
+		{
+			mapModel.currentParcel = fs.features[0] as Graphic;
+			
+			var e:MappingEvent = new MappingEvent(MappingEvent.PARCEL_DETAILS_LOADED);
+			e.attributes = mapModel.currentParcel.attributes;
+			dispatcher.dispatchEvent(e);
+		}
+		
+		private function queryParcelsFaultHandler(event:FaultEvent):void
+		{
+			// do nothing
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED")]
+		public function handleParcelsDetailsLoaded():void
+		{
+			if(applicationModel.screenType == ApplicationModel.MOBILE_SCREEN_TYPE) return;
+				
+			//Create info graphic
+			var infoGra:Graphic = new Graphic();
+			infoGra.geometry = mapModel.currentParcel.geometry;
+			infoGra.attributes = mapModel.currentParcel.attributes;
+			
+			//Create new info symbol
+			var iSymbol:InfoSymbol = new InfoSymbol();  
+			iSymbol.containerStyleName = "infoSymbolWindow";
+			iSymbol.infoRenderer = new ClassFactory(ParcelInfoSymbolRenderer);
+			
+			infoGra.symbol = iSymbol;
+			
+			mapModel.infoSymbolLayer.clear();		
+			mapModel.infoSymbolLayer.add(infoGra);
+		}
+	}
+}

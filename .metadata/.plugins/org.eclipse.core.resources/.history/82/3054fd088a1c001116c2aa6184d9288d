@@ -1,0 +1,49 @@
+package com.gisinc.showcase.multiscreen.desktop.pm
+{
+	import com.esri.ags.Graphic;
+	import com.esri.ags.symbols.InfoSymbol;
+	import com.esri.ags.symbols.InfoSymbol2;
+	import com.gisinc.showcase.multiscreen.event.MappingEvent;
+	import com.gisinc.showcase.multiscreen.model.MapModel;
+	import com.gisinc.showcase.multiscreen.view.renderer.ParcelInfoSymbolRenderer;
+	
+	import spark.components.WindowedApplication;
+
+	public class DesktopApplicationPM
+	{
+		[Dispatcher]
+		public var dispatcher:IEventDispatcher;	
+
+		[Inject]
+		public var mapModel:MapModel;
+		
+		public function DesktopApplicationPM()
+		{			
+		}
+		
+		public function handleApplicationComplete(event:FlexEvent):void
+		{
+			var app:WindowedApplication = event.currentTarget as WindowedApplication;
+		}
+		
+		[EventHandler("MappingEvent.PARCEL_DETAILS_LOADED", properties="graphic")]
+		public function handleShowDetails(graphic:Graphic):void
+		{
+			//Create info graphic
+			var infoGra:Graphic = new Graphic();  
+			infoGra.geometry = graphic.geometry;
+			infoGra.attributes = graphic.attributes;
+			
+			//Create new info symbol
+			var isymbol:InfoSymbol2 = new InfoSymbol2();  
+			isymbol.containerStyleName = "infoSymbolWindow";
+			isymbol.infoRenderer = new ClassFactory(ParcelInfoSymbolRenderer);
+			
+			infoGra.symbol = isymbol;
+			
+			
+			var e:MappingEvent = new MappingEvent(MappingEvent.ADD_INFO_SYMBOL);
+			e.
+		}
+	}	
+}
